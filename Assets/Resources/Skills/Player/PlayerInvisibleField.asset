@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f401782c92ff3e04a9fa9a9fc9e2ab90, type: 3}
+  m_Name: PlayerInvisibleField
+  m_EditorClassIdentifier: Assembly-CSharp::InvisibleField
+  CooldownTime: 20
+  ChargeTime: 0
+  ExecuteTime: 0
+  RecoveryTime: 0
+  SkillIcon: {fileID: -8528607849483967790, guid: 2268cb5a9a9158447913a85bffe9ab59, type: 3}
+  Duration: 5
+  InvincibleZonePrefab: {fileID: 2729940724845518611, guid: 4d6f263b9428fa34692e2ef54066ad76, type: 3}

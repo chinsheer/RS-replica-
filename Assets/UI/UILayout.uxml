@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/BossHPBar.uss?fileID=7433441132597879392&amp;guid=3002b8d9bc6b33e47bcb7a5a395e73cb&amp;type=3#BossHPBar"/>
+    <ui:ProgressBar value="100" title="BOSS HP" name="BossHP" style="color: rgb(255, 255, 255);"/>
+</ui:UXML>
