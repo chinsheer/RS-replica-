@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "BossAttackData", menuName = "Scriptable Objects/BossAttackData")]
@@ -14,6 +15,6 @@ public abstract class BossAttackData : ScriptableObject
     public float ActiveTime => _activeTime;
     public float RecoverTime => _recoverTime;
 
-    public abstract EffectHandle Indicator(GameObject boss, Transform target);
-    public abstract EffectHandle Execute(GameObject boss, Transform target);
+    public abstract IEnumerator Indicator(GameObject boss, Transform target);
+    public abstract IEnumerator Execute(GameObject boss, Transform target);
 }

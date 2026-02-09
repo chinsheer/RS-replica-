@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 [CreateAssetMenu(fileName = "BossLaser", menuName = "Scriptable Objects/BossAttacks/BossLaser")]
 public class BossLaser : BossAttackData
@@ -11,7 +12,7 @@ public class BossLaser : BossAttackData
 
     private Vector2 _lastDirection;
 
-    public override EffectHandle Indicator(GameObject boss, Transform target)
+    public override IEnumerator Indicator(GameObject boss, Transform target)
     {
         _lastDirection = (target.position - boss.transform.position).normalized;
         GameObject indicator = Instantiate(_indicatorPrefab, boss.transform.position, Quaternion.identity);
@@ -27,13 +28,14 @@ public class BossLaser : BossAttackData
         };
         indicator.GetComponent<Laser>().Damage = damageAttribute;
 
-        return new EffectHandle(
-            update: deltaTime => { },
-            cleanup: () => Destroy(indicator)
-        );
+        yield return new WaitForSeconds(ChargeTime);
+        if(indicator != null)
+        {
+            Destroy(indicator);
+        }
     }
 
-    public override EffectHandle Execute(GameObject boss, Transform target)
+    public override IEnumerator Execute(GameObject boss, Transform target)
     {
         GameObject laser = Instantiate(_laserPrefab, boss.transform.position, Quaternion.identity);
         SpriteRenderer laserSprite = laser.GetComponent<SpriteRenderer>();
@@ -50,9 +52,10 @@ public class BossLaser : BossAttackData
         laser.GetComponent<Laser>().Damage = damageAttribute;
         laser.layer = LayerMask.NameToLayer("EnemyAttack");
 
-        return new EffectHandle(
-            update: deltaTime => { },
-            cleanup: () => Destroy(laser)
-        );
+        yield return new WaitForSeconds(ActiveTime);
+        if(laser != null)
+        {
+            Destroy(laser);
+        }
     }
 }

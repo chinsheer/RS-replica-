@@ -1,12 +1,18 @@
 using UnityEngine;
+using System.Collections;
 
 [CreateAssetMenu(fileName = "BossBulletPath", menuName = "Scriptable Objects/BossAttacks/BossBulletPath")]
 public class BossBulletPath : BossAttackData
 {
-    public GameObject BulletPrefab;
+    [Header("Bullet")]
+    [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private float _bulletSpeed = 3f;
+    [SerializeField] private string _enemyAttackLayerName = "EnemyAttack";
 
-    public BulletPathType PathType;
-    public float BulletSpeed = 10f;
+    [Header("Pattern")]
+    [SerializeField] private BulletPathType _pathType = BulletPathType.ConeMaze;
+    [SerializeField] private int _bulletAmount = 10;
+    [SerializeField] private float _coneAngle = 90f;
     public enum BulletPathType
     {
         Straight,
@@ -15,60 +21,59 @@ public class BossBulletPath : BossAttackData
         ConeMaze
     }
 
-    public override EffectHandle Indicator(GameObject boss, Transform target)
+    public override IEnumerator Indicator(GameObject boss, Transform target)
     {
         // Implementation for the indicator of the bullet path attack
-        return new EffectHandle(
-            update: deltaTime => { },
-            cleanup: () => { }
-        );
-    }
-
-    public override EffectHandle Execute(GameObject boss, Transform target)
-    {
-        // Implementation for executing the bullet path attack
-        if(PathType == BulletPathType.ConeMaze) return ConeMazePattern(boss.transform, target);
         return null;
     }
 
-    private EffectHandle ConeMazePattern(Transform boss, Transform target)
+    public override IEnumerator Execute(GameObject boss, Transform target)
     {
-        float coneAngle = 90f;
-        int bulletAmount = 10;
+        // Implementation for executing the bullet path attack
+        if(_pathType == BulletPathType.ConeMaze) return ConeMazePattern(boss.transform, target);
+        return null;
+    }
+
+    private IEnumerator ConeMazePattern(Transform boss, Transform target)
+    {
+        if(_bulletPrefab == null || _bulletAmount <= 0)
+        {
+            if (ActiveTime > 0f)
+                yield return new WaitForSeconds(ActiveTime);
+            yield break;
+        }
+
         Vector3 targetAngle = (target.position - boss.position).normalized;
-        Vector3 floorDirection = Quaternion.Euler(0, 0, -coneAngle/2) * targetAngle;
-        Vector3 ceilDirection = Quaternion.Euler(0, 0, coneAngle/2) * targetAngle;
-        Quaternion bulletDirectionIncrement = Quaternion.Euler(0, 0, coneAngle / bulletAmount);
+        Vector3 floorDirection = Quaternion.Euler(0, 0, -_coneAngle/2) * targetAngle;
+        Vector3 ceilDirection = Quaternion.Euler(0, 0, _coneAngle/2) * targetAngle;
+        Quaternion bulletDirectionIncrement = Quaternion.Euler(0, 0, _coneAngle / _bulletAmount);
 
         Vector3 currentVector = floorDirection;
         float timeElapsed = 0f;
         int currentBullet = 0;
-        float bulletTimeSection = ActiveTime/(bulletAmount - 1);
+        float bulletTimeSection = ActiveTime/(_bulletAmount - 1);
 
-
-        void Update(float dt)
+        while (timeElapsed < ActiveTime)
         {
-            if(currentBullet >= bulletAmount) return;
+            if (currentBullet >= _bulletAmount) yield break;
             while(timeElapsed >= bulletTimeSection * currentBullet)
             {
                 SpawnBullet(boss.position, currentVector);
                 currentVector = bulletDirectionIncrement * currentVector;
                 currentBullet++;
             }
-            timeElapsed += dt;
+            timeElapsed += Time.deltaTime;
+            yield return null;
         }
-
-        return new EffectHandle(
-            update: Update,
-            cleanup: () => { }
-        );
+        yield return null;
     }
 
     private GameObject SpawnBullet(Vector3 position, Vector3 vector)
     {
-        GameObject bullet = Instantiate(BulletPrefab, position, Quaternion.identity);
-        bullet.GetComponent<Rigidbody2D>().linearVelocity =  vector * BulletSpeed;
+        GameObject bullet = Instantiate(_bulletPrefab, position, Quaternion.identity);
+        bullet.GetComponent<Rigidbody2D>().linearVelocity =  vector * _bulletSpeed;
         bullet.transform.position = position;
+        bullet.layer = LayerMask.NameToLayer(_enemyAttackLayerName);
         return bullet;
     }
 }

@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - SkillIcon: {instanceID: 0}
-  - LaserPrefab: {fileID: 3086682295279495952, guid: 49b68d6ee1525354a95b950a06a23f6e, type: 3}
+  - LaserPrefab: {fileID: 5430542660831025934, guid: 8a738427da6a7ec46ab654a772f74aee, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
