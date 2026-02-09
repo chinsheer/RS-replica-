@@ -1,8 +1,8 @@
 using System.Collections;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "BossAttackData", menuName = "Scriptable Objects/BossAttackData")]
-public abstract class BossAttackData : ScriptableObject
+[CreateAssetMenu(fileName = "AttackData", menuName = "Scriptable Objects/AttackData")]
+public abstract class AttackData : ScriptableObject
 {
     [SerializeField] private float _cooldownTime = 1f;
     public float CooldownTime => _cooldownTime;

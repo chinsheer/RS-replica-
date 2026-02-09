@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-public class BossHealth : MonoBehaviour, IDamageable
+public class EnemyHealth : MonoBehaviour, IDamageable
 {
     public float MaxHP = 1000;
     public float CurrentHP{ get { return _currentHP; } }

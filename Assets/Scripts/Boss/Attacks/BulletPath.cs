@@ -1,8 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-[CreateAssetMenu(fileName = "BossBulletPath", menuName = "Scriptable Objects/BossAttacks/BossBulletPath")]
-public class BossBulletPath : BossAttackData
+[CreateAssetMenu(fileName = "BulletPath", menuName = "Scriptable Objects/Attacks/BossBulletPath")]
+public class BulletPath : AttackData
 {
     [Header("Bullet")]
     [SerializeField] private GameObject _bulletPrefab;

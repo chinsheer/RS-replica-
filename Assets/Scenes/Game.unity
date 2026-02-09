@@ -1398,10 +1398,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1146751588}
-  - component: {fileID: 1146751589}
   - component: {fileID: 1146751590}
-  - component: {fileID: 1146751593}
   - component: {fileID: 1146751591}
+  - component: {fileID: 1146751593}
+  - component: {fileID: 1146751592}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1426,22 +1426,6 @@ Transform:
   - {fileID: 1560323865}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1146751589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1146751587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0a3ba2829542b45a46e1aea9f85477, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  _runner: {fileID: 1146751591}
-  _attacks:
-  - {fileID: 11400000, guid: 514afbb887173124cba4d12d42449ea0, type: 2}
-  - {fileID: 11400000, guid: dfac456bd34e41d42886c23252da8b62, type: 2}
 --- !u!50 &1146751590
 Rigidbody2D:
   serializedVersion: 5
@@ -1478,10 +1462,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1146751587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b816c21e17914142841b6894528cef1, type: 3}
+  m_Script: {fileID: 11500000, guid: 494ce0bf219d6fc40a198915b91e089b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossAttackRunner
   _target: {fileID: 542255668}
+--- !u!114 &1146751592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146751587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47371d335402bc418ab66677580b624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+  _runner: {fileID: 1146751591}
+  _attacks:
+  - {fileID: 11400000, guid: c3ec0ecc19485674e903555b5f68283e, type: 2}
+  - {fileID: 11400000, guid: 514afbb887173124cba4d12d42449ea0, type: 2}
 --- !u!114 &1146751593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1491,9 +1491,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1146751587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 922196c7315a7124a8736550fe536b2f, type: 3}
+  m_Script: {fileID: 11500000, guid: fca1abf13ff8a2640ae276d7367ee83d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BossHealth
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   MaxHP: 1000
 --- !u!1 &1181473924
 GameObject:

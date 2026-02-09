@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 
 public class BossHealthUI : MonoBehaviour
 {
-    public BossHealth Boss;
+    public EnemyHealth Boss;
 
     void Awake()
     {

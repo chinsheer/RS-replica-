@@ -2,20 +2,20 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 
-public class BossController : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
-    [SerializeField] private BossAttackRunner _runner;
-    [SerializeField] private List<BossAttackData> _attacks;
+    [SerializeField] private AttackRunner _runner;
+    [SerializeField] private List<AttackData> _attacks;
 
     private bool _busy;
-    private BossAttack[] _bossAttacks;
+    private Attack[] _attacksInstances;
 
     void Awake()
     {
-        _bossAttacks = new BossAttack[_attacks.Count];
+        _attacksInstances = new Attack[_attacks.Count];
         for (int i = 0; i < _attacks.Count; i++)
         {
-            _bossAttacks[i] = new BossAttack(_attacks[i]);
+            _attacksInstances[i] = new Attack(_attacks[i]);
         }
     }
 
@@ -29,17 +29,17 @@ public class BossController : MonoBehaviour
             StartCoroutine(ExecuteAttack(attack));
     }
 
-    IEnumerator ExecuteAttack(BossAttack attack)
+    IEnumerator ExecuteAttack(Attack attack)
     {
         _busy = true;
         yield return _runner.Run(attack);
         _busy = false;
     }
 
-    BossAttack ChooseNextAttack()
+    Attack ChooseNextAttack()
     {
         // Simple random choice for demonstration purposes
-        int index = Random.Range(0, _bossAttacks.Length);
-        return _bossAttacks[index];
+        int index = Random.Range(0, _attacksInstances.Length);
+        return _attacksInstances[index];
     }
 }

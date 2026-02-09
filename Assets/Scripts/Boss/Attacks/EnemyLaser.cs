@@ -1,8 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-[CreateAssetMenu(fileName = "BossLaser", menuName = "Scriptable Objects/BossAttacks/BossLaser")]
-public class BossLaser : BossAttackData
+[CreateAssetMenu(fileName = "Laser", menuName = "Scriptable Objects/Attacks/Laser")]
+public class EnemyLaser : AttackData
 {
     [SerializeField] private GameObject _indicatorPrefab;
     [SerializeField] private GameObject _laserPrefab;
