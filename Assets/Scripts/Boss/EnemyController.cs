@@ -6,6 +6,7 @@ public class EnemyController : MonoBehaviour
 {
     [SerializeField] private AttackRunner _runner;
     [SerializeField] private List<AttackData> _attacks;
+    [SerializeField] private Transform _target;
 
     private bool _busy;
     private Attack[] _attacksInstances;
@@ -32,7 +33,7 @@ public class EnemyController : MonoBehaviour
     IEnumerator ExecuteAttack(Attack attack)
     {
         _busy = true;
-        yield return _runner.Run(attack);
+        yield return _runner.Run(attack, _target);
         _busy = false;
     }
 

@@ -1465,7 +1465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 494ce0bf219d6fc40a198915b91e089b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossAttackRunner
-  _target: {fileID: 542255668}
 --- !u!114 &1146751592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1482,6 +1481,8 @@ MonoBehaviour:
   _attacks:
   - {fileID: 11400000, guid: c3ec0ecc19485674e903555b5f68283e, type: 2}
   - {fileID: 11400000, guid: 514afbb887173124cba4d12d42449ea0, type: 2}
+  - {fileID: 11400000, guid: ae1ff2e864860fc4fa8d10439b299db0, type: 2}
+  _target: {fileID: 542255668}
 --- !u!114 &1146751593
 MonoBehaviour:
   m_ObjectHideFlags: 0

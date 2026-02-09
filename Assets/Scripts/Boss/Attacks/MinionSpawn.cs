@@ -1,9 +1,11 @@
 using UnityEngine;
 using System.Collections;
 
+[CreateAssetMenu(fileName = "Minion Spawn", menuName = "Scriptable Objects/Attacks/Minion Spawn")]
 public class BossMinionSpawn : AttackData
 {
-    [SerializeField] private GameObject _minionPrefab;
+    [SerializeField] private MinionData _minionData;
+    [SerializeField] private Vector2 _spawnOffset;
 
     public override IEnumerator Indicator(GameObject boss, Transform target)
     {
@@ -13,17 +15,12 @@ public class BossMinionSpawn : AttackData
 
     public override IEnumerator Execute(GameObject boss, Transform target)
     {
-        GameObject minion = Instantiate(_minionPrefab, boss.transform.position, Quaternion.identity);
+        GameObject minion = Instantiate(_minionData.Prefab, boss.transform.position, Quaternion.identity);
+        MinionController controller = minion.GetComponent<MinionController>();
+        Vector2 randomOffset = Random.insideUnitCircle.normalized * 4f;
+        controller.Initialize(_minionData, target, (Vector2)boss.transform.position + _spawnOffset + randomOffset);
         // Additional setup for the minion can be done here
 
         yield return new WaitForSeconds(ActiveTime);
-    }
-
-    public IEnumerator LaserMinion(Transform target)
-    {
-        while (true)
-        {
-            yield return null;
-        }
     }
 }

@@ -4,11 +4,15 @@ using UnityEngine;
 public class MinionData : ScriptableObject
 {
     [Header("Prefab")]
-    public GameObject prefab;
+    [SerializeField] private GameObject _prefab;
 
     [Header("Stats")]
-    public int maxHp = 20;
+    [SerializeField] private int _maxHp = 20;
 
     [Header("Attack")]
-    public AttackData[] attacks;
+    [SerializeField] private AttackData _attack;
+
+    public GameObject Prefab => _prefab;
+    public int MaxHp => _maxHp;
+    public AttackData Attack => _attack;
 }

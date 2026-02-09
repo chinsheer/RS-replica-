@@ -21,5 +21,9 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         _currentHP -= damage.DamageAmount;
         _currentHP = Mathf.Clamp(_currentHP, 0, MaxHP);
         OnHealthChanged?.Invoke(_currentHP);
+        if(_currentHP <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -22,5 +22,9 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         _currentHP -= 1;
         _currentHP = Mathf.Clamp(_currentHP, 0, MaxHP);
         OnHealthChanged?.Invoke(_currentHP);
+        if(_currentHP <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

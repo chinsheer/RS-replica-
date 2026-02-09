@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3978896262777946180}
   - component: {fileID: 4835431240944069907}
   - component: {fileID: 2664863115040787033}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3497425505521041079}
   - component: {fileID: 3970312902048623427}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8844635188180619193}
   - component: {fileID: 2079132123900431541}
-  m_Layer: 0
+  - component: {fileID: -4885781585070758250}
+  - component: {fileID: 7534544152407742645}
+  m_Layer: 10
   m_Name: Minion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,3 +305,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-4885781585070758250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6579490161523970072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729380c23891824b80b8a5fa12de295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MinionController
+--- !u!114 &7534544152407742645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6579490161523970072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca1abf13ff8a2640ae276d7367ee83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  MaxHP: 20
