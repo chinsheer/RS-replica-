@@ -14,7 +14,6 @@ public class HearthUI : MonoBehaviour
         _maxHearth = Player.MaxHP;
         for (int i = 0; i < Player.CurrentHP; i++)
         {
-            Debug.Log("Creating hearth " + i);
             Instantiate(Hearth, transform);
         }
         Player.OnHealthChanged += RefreshHearts;

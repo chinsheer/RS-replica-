@@ -7,6 +7,7 @@ public class BossLaser : BossAttackData
     [SerializeField] private GameObject _laserPrefab;
     [SerializeField] private float width = 2f;
     [SerializeField] private float length = 10f;
+    [SerializeField] private float fadeOutDuration = 0.3f;
 
     private Vector2 _lastDirection;
 
@@ -39,7 +40,7 @@ public class BossLaser : BossAttackData
         laserSprite.size = new Vector2(length, width);
         laserSprite.color = Color.red;
         laser.transform.right = _lastDirection;
-        laser.GetComponent<Fade>().FadeOut(1f);
+        laser.GetComponent<Fade>().FadeOut(fadeOutDuration);
 
         DamageAttribute damageAttribute = new DamageAttribute
         {
