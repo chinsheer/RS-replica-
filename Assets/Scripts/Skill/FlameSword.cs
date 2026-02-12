@@ -20,7 +20,6 @@ public class FlameSword : SkillData
         DamageAttribute damageAttribute = new DamageAttribute
         {
             DamageAmount = Damage,
-            DamageSource = user
         };
         swordInstance.GetComponent<SpriteRenderer>().color = SwordColor;
         swordInstance.GetComponent<Melee>().Damage = damageAttribute;

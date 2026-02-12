@@ -2,45 +2,30 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour, IBossContext
 {
-    [SerializeField] private AttackRunner _runner;
-    [SerializeField] private List<AttackData> _attacks;
+    private PatternRunner _runner;
     [SerializeField] private Transform _target;
+    [SerializeField] private EnemyHealth _health;
+    [SerializeField] private EnemyMinionManager _minionManager;
+    [SerializeField] private PatternData _startPattern;
+    [SerializeField] private PatternData[] _allPatterns;
 
     private bool _busy;
-    private Attack[] _attacksInstances;
+
+    // IBossContext implementation
+    public Transform Boss => transform;
+    public Transform Player => _target;
+    public float currentHealth => _health.CurrentHP;
+    public float maxHealth => _health.MaxHP;
 
     void Awake()
     {
-        _attacksInstances = new Attack[_attacks.Count];
-        for (int i = 0; i < _attacks.Count; i++)
+        _runner = GetComponent<PatternRunner>();
+        if (_runner == null)
         {
-            _attacksInstances[i] = new Attack(_attacks[i]);
+            Debug.LogError("PatternRunner component missing on EnemyController GameObject.");
         }
-    }
-
-    void Update()
-    {
-        if (_busy) return;
-
-        var attack = ChooseNextAttack();
-
-        if (attack != null)
-            StartCoroutine(ExecuteAttack(attack));
-    }
-
-    IEnumerator ExecuteAttack(Attack attack)
-    {
-        _busy = true;
-        yield return _runner.Run(attack, _target);
-        _busy = false;
-    }
-
-    Attack ChooseNextAttack()
-    {
-        // Simple random choice for demonstration purposes
-        int index = Random.Range(0, _attacksInstances.Length);
-        return _attacksInstances[index];
+        _runner.Initialize(_startPattern, _allPatterns);
     }
 }

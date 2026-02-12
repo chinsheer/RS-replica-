@@ -1,28 +1,23 @@
 using System.Collections;
 using UnityEngine;
 
-public class MinionController : MonoBehaviour
+public class MinionController : MonoBehaviour, IBossContext
 {
     private MinionData _data;
     private Transform _target;
-    private Attack attack;
+
+    // IBossContext implementation
+    public Transform Boss => gameObject.transform;
+    public Transform Player => _target;
+    public float currentHealth => gameObject.GetComponent<EnemyHealth>().CurrentHP;
+    public float maxHealth => gameObject.GetComponent<EnemyHealth>().MaxHP; 
 
     public void Initialize(MinionData data, Transform target, Vector2 position)
     {
         _data = data;
         _target = target;
-        attack = new Attack(_data.Attack);
         gameObject.GetComponent<EnemyHealth>().MaxHP = _data.MaxHp;
-        gameObject.AddComponent<AttackRunner>();
         gameObject.AddComponent<MoveToPoint2D>().SetGoal(position);
-        StartCoroutine(ExecuteAttack());
-    }
-
-    public IEnumerator ExecuteAttack()
-    {
-        while (true)
-        {
-            yield return gameObject.GetComponent<AttackRunner>().Run(attack, _target);
-        }
+        gameObject.AddComponent<PatternRunner>().Initialize(_data.StartPattern, _data.AllPatterns);
     }
 }

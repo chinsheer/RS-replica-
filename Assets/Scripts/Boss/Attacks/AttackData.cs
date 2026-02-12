@@ -15,6 +15,6 @@ public abstract class AttackData : ScriptableObject
     public float ActiveTime => _activeTime;
     public float RecoverTime => _recoverTime;
 
-    public abstract IEnumerator Indicator(GameObject boss, Transform target);
-    public abstract IEnumerator Execute(GameObject boss, Transform target);
+    public abstract IEnumerator Indicator(IBossContext ctx);
+    public abstract IEnumerator Execute(IBossContext ctx);
 }

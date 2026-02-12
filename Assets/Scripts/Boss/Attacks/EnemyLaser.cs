@@ -12,10 +12,10 @@ public class EnemyLaser : AttackData
 
     private Vector2 _lastDirection;
 
-    public override IEnumerator Indicator(GameObject boss, Transform target)
+    public override IEnumerator Indicator(IBossContext ctx)
     {
-        _lastDirection = (target.position - boss.transform.position).normalized;
-        GameObject indicator = Instantiate(_indicatorPrefab, boss.transform.position, Quaternion.identity);
+        _lastDirection = (ctx.Player.position - ctx.Boss.position).normalized;
+        GameObject indicator = Instantiate(_indicatorPrefab, ctx.Boss.position, Quaternion.identity);
         indicator.transform.right = _lastDirection;
         SpriteRenderer indicatorSprite = indicator.GetComponent<SpriteRenderer>();
         indicatorSprite.size = new Vector2(length, width);
@@ -23,8 +23,7 @@ public class EnemyLaser : AttackData
 
         DamageAttribute damageAttribute = new DamageAttribute
         {
-            DamageAmount = 0,
-            DamageSource = boss
+            DamageAmount = 0
         };
         indicator.GetComponent<Laser>().Damage = damageAttribute;
 
@@ -35,9 +34,9 @@ public class EnemyLaser : AttackData
         }
     }
 
-    public override IEnumerator Execute(GameObject boss, Transform target)
+    public override IEnumerator Execute(IBossContext ctx)
     {
-        GameObject laser = Instantiate(_laserPrefab, boss.transform.position, Quaternion.identity);
+        GameObject laser = Instantiate(_laserPrefab, ctx.Boss.position, Quaternion.identity);
         SpriteRenderer laserSprite = laser.GetComponent<SpriteRenderer>();
         laserSprite.size = new Vector2(length, width);
         laserSprite.color = Color.red;
@@ -47,7 +46,6 @@ public class EnemyLaser : AttackData
         DamageAttribute damageAttribute = new DamageAttribute
         {
             DamageAmount = 1,
-            DamageSource = boss
         };
         laser.GetComponent<Laser>().Damage = damageAttribute;
         laser.layer = LayerMask.NameToLayer("EnemyAttack");

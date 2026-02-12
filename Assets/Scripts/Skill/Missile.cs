@@ -24,8 +24,7 @@ public class Missile : SkillData
 
         DamageAttribute damageAttribute = new DamageAttribute
         {
-            DamageAmount = Damage,
-            DamageSource = user
+            DamageAmount = Damage
         };
 
         GameObject[] instance = new GameObject[MissileAmount];

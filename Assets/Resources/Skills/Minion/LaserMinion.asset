@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MinionData
   _prefab: {fileID: 6579490161523970072, guid: 9463d1bae9bfcdf4082fb637b17fc5bb, type: 3}
   _maxHp: 20
-  _attack: {fileID: 11400000, guid: 514afbb887173124cba4d12d42449ea0, type: 2}
+  startPattern: {fileID: 11400000, guid: 4297cf85bc64b5046a4b4bb8aec537cf, type: 2}
+  allPatterns:
+  - {fileID: 11400000, guid: 4297cf85bc64b5046a4b4bb8aec537cf, type: 2}

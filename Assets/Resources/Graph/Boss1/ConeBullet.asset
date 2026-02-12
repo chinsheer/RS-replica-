@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1431a27b152377640a6a65557f337965, type: 3}
+  m_Name: ConeBullet
+  m_EditorClassIdentifier: Assembly-CSharp::PatternData
+  Attacks:
+  - {fileID: 11400000, guid: c3ec0ecc19485674e903555b5f68283e, type: 2}
+  Edges:
+  - {fileID: 11400000, guid: d87180b79767d604ea9a3a9ffc7ae1e8, type: 2}
+  - {fileID: 11400000, guid: 6cbcd5523e91fe54494e4984c768816d, type: 2}
+  - {fileID: 11400000, guid: 7e8a58b6ae458f44b8c25a47bdc0eb6a, type: 2}

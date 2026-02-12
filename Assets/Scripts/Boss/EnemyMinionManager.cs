@@ -1,16 +1,16 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMinionManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private List<MinionController> _minions = new List<MinionController>();
+    public List<MinionController> Minions => _minions;
+    
+    public void RegisterMinion(MinionController minion)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (!_minions.Contains(minion))
+        {
+            _minions.Add(minion);
+        }
     }
 }

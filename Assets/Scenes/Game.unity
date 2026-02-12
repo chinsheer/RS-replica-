@@ -1402,6 +1402,7 @@ GameObject:
   - component: {fileID: 1146751591}
   - component: {fileID: 1146751593}
   - component: {fileID: 1146751592}
+  - component: {fileID: 1146751594}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1462,9 +1463,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1146751587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 494ce0bf219d6fc40a198915b91e089b, type: 3}
+  m_Script: {fileID: 11500000, guid: a1f80b86a487130448062e90e99e9e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossAttackRunner
+  _startPattern: {fileID: 11400000, guid: f85e88f0f1a64464d8e206e617fdbeb4, type: 2}
+  _allPatterns: []
 --- !u!114 &1146751592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1477,12 +1480,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c47371d335402bc418ab66677580b624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  _runner: {fileID: 1146751591}
-  _attacks:
-  - {fileID: 11400000, guid: c3ec0ecc19485674e903555b5f68283e, type: 2}
-  - {fileID: 11400000, guid: 514afbb887173124cba4d12d42449ea0, type: 2}
-  - {fileID: 11400000, guid: ae1ff2e864860fc4fa8d10439b299db0, type: 2}
   _target: {fileID: 542255668}
+  _health: {fileID: 1146751593}
+  _minionManager: {fileID: 1146751594}
+  _startPattern: {fileID: 11400000, guid: f85e88f0f1a64464d8e206e617fdbeb4, type: 2}
+  _allPatterns:
+  - {fileID: 11400000, guid: f85e88f0f1a64464d8e206e617fdbeb4, type: 2}
+  - {fileID: 11400000, guid: 8a41622892c62f54bad0e690e216bd92, type: 2}
+  - {fileID: 11400000, guid: 43fa2f6c7d0185148bbf2488e033ea5a, type: 2}
 --- !u!114 &1146751593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1496,6 +1501,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   MaxHP: 1000
+--- !u!114 &1146751594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146751587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4280f8479ac641e4c92fe2da67be9a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMinionManager
 --- !u!1 &1181473924
 GameObject:
   m_ObjectHideFlags: 0

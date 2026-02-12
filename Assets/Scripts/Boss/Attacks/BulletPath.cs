@@ -21,20 +21,20 @@ public class BulletPath : AttackData
         ConeMaze
     }
 
-    public override IEnumerator Indicator(GameObject boss, Transform target)
+    public override IEnumerator Indicator(IBossContext ctx)
     {
         // Implementation for the indicator of the bullet path attack
         return null;
     }
 
-    public override IEnumerator Execute(GameObject boss, Transform target)
+    public override IEnumerator Execute(IBossContext ctx)
     {
         // Implementation for executing the bullet path attack
-        if(_pathType == BulletPathType.ConeMaze) return ConeMazePattern(boss.transform, target);
+        if(_pathType == BulletPathType.ConeMaze) return ConeMazePattern(ctx);
         return null;
     }
 
-    private IEnumerator ConeMazePattern(Transform boss, Transform target)
+    private IEnumerator ConeMazePattern(IBossContext ctx)
     {
         if(_bulletPrefab == null || _bulletAmount <= 0)
         {
@@ -43,7 +43,7 @@ public class BulletPath : AttackData
             yield break;
         }
 
-        Vector3 targetAngle = (target.position - boss.position).normalized;
+        Vector3 targetAngle = (ctx.Player.position - ctx.Boss.position).normalized;
         Vector3 floorDirection = Quaternion.Euler(0, 0, -_coneAngle/2) * targetAngle;
         Vector3 ceilDirection = Quaternion.Euler(0, 0, _coneAngle/2) * targetAngle;
         Quaternion bulletDirectionIncrement = Quaternion.Euler(0, 0, _coneAngle / _bulletAmount);
@@ -58,7 +58,7 @@ public class BulletPath : AttackData
             if (currentBullet >= _bulletAmount) yield break;
             while(timeElapsed >= bulletTimeSection * currentBullet)
             {
-                SpawnBullet(boss.position, currentVector);
+                SpawnBullet(ctx.Boss.position, currentVector);
                 currentVector = bulletDirectionIncrement * currentVector;
                 currentBullet++;
             }

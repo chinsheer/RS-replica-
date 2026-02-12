@@ -3,11 +3,10 @@ using UnityEngine;
 public struct DamageAttribute
 {
     public float DamageAmount;
-    public GameObject DamageSource;
+    // For scaling
 
-    public DamageAttribute(float damageAmount, GameObject damageSource)
+    public DamageAttribute(float damageAmount)
     {
         DamageAmount = damageAmount;
-        DamageSource = damageSource;
     }
 }

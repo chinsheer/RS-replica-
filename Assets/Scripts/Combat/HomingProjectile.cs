@@ -10,7 +10,6 @@ public class HomingProjectile : MonoBehaviour
     public DamageAttribute Damage = new DamageAttribute
     {
         DamageAmount = 0f,
-        DamageSource = null 
     };
 
     void Awake()

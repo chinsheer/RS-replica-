@@ -19,7 +19,6 @@ public class StraightLaser : SkillData
         DamageAttribute damageAttribute = new DamageAttribute
         {
             DamageAmount = Damage,
-            DamageSource = user
         };
         
         Vector3 spawnPosition = user.transform.position + new Vector3(0f, 0.2f, 0f);

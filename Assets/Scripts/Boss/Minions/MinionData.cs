@@ -10,9 +10,11 @@ public class MinionData : ScriptableObject
     [SerializeField] private int _maxHp = 20;
 
     [Header("Attack")]
-    [SerializeField] private AttackData _attack;
+    [SerializeField] private PatternData startPattern;
+    [SerializeField] private PatternData[] allPatterns;
 
     public GameObject Prefab => _prefab;
     public int MaxHp => _maxHp;
-    public AttackData Attack => _attack;
+    public PatternData StartPattern => startPattern;
+    public PatternData[] AllPatterns => allPatterns;
 }

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1431a27b152377640a6a65557f337965, type: 3}
+  m_Name: SummonMinion
+  m_EditorClassIdentifier: Assembly-CSharp::PatternData
+  Attacks:
+  - {fileID: 11400000, guid: ae1ff2e864860fc4fa8d10439b299db0, type: 2}
+  Edges:
+  - {fileID: 11400000, guid: 8b3f083d4843dea4888e98e4a8cea828, type: 2}
