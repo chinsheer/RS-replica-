@@ -26,6 +26,7 @@ public class EnemyLaser : AttackData
             DamageAmount = 0
         };
         indicator.GetComponent<Laser>().Damage = damageAttribute;
+        indicator.layer = LayerMask.NameToLayer("EnemyAttackIndicator");
 
         yield return new WaitForSeconds(ChargeTime);
         if(indicator != null)

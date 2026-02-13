@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PatternRunner : MonoBehaviour
 {
-    [SerializeField] private PatternData _startPattern;
-    [SerializeField] private PatternData[] _allPatterns;
+    private PatternData _startPattern;
+    private PatternData[] _allPatterns;
 
     private Dictionary<PatternData, PatternInstance> _map;
     private PatternInstance _current;

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d596cc6b06fc748aface261e326e30, type: 3}
+  m_Name: Boss1
+  m_EditorClassIdentifier: Assembly-CSharp::BossData
+  bossId: 1
+  bossPrefab: {fileID: 6152534787066740712, guid: 5145eb51d02e6f144977ec0f9a06c224, type: 3}
+  spawnPosition: {x: 0, y: 0, z: 0}
+  maxHp: 300
+  maxMinions: 3
+  startPattern: {fileID: 11400000, guid: f85e88f0f1a64464d8e206e617fdbeb4, type: 2}
+  allPatterns:
+  - {fileID: 11400000, guid: f85e88f0f1a64464d8e206e617fdbeb4, type: 2}
+  - {fileID: 11400000, guid: 8a41622892c62f54bad0e690e216bd92, type: 2}
+  - {fileID: 11400000, guid: 43fa2f6c7d0185148bbf2488e033ea5a, type: 2}
+  phase2At: 0.66
+  phase3At: 0.33
+  selfLoopPenalty: 0

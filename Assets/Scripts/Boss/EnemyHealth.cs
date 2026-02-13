@@ -7,11 +7,13 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     public float CurrentHP{ get { return _currentHP; } }
 
     public event Action<float> OnHealthChanged;
+    public event Action OnDeath;
     
     private float _currentHP;
 
-    void Awake()
+    public void Initialize(float maxHP)
     {
+        MaxHP = maxHP;
         _currentHP = MaxHP;
         OnHealthChanged?.Invoke(_currentHP);
     }
@@ -23,6 +25,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         OnHealthChanged?.Invoke(_currentHP);
         if(_currentHP <= 0)
         {
+            OnDeath?.Invoke();
             Destroy(gameObject);
         }
     }

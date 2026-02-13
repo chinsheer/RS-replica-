@@ -18,7 +18,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     public void TakeDamage(DamageAttribute damage)
     {
-        if(damage.DamageAmount <= 0) return;
         _currentHP -= 1;
         _currentHP = Mathf.Clamp(_currentHP, 0, MaxHP);
         OnHealthChanged?.Invoke(_currentHP);
