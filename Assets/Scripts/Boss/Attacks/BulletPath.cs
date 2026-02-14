@@ -18,7 +18,8 @@ public class BulletPath : AttackData
         Straight,
         SineWave,
         Circular,
-        ConeMaze
+        ConeMaze,
+        StraightBurst,
     }
 
     public override IEnumerator Indicator(IBossContext ctx)
@@ -31,6 +32,7 @@ public class BulletPath : AttackData
     {
         // Implementation for executing the bullet path attack
         if(_pathType == BulletPathType.ConeMaze) return ConeMazePattern(ctx);
+        if(_pathType == BulletPathType.StraightBurst) return StraightBurstPattern(ctx);
         return null;
     }
 
@@ -66,6 +68,28 @@ public class BulletPath : AttackData
             yield return null;
         }
         yield return null;
+    }
+
+    private IEnumerator StraightBurstPattern(IBossContext ctx)
+    {
+        if(_bulletPrefab == null || _bulletAmount <= 0)
+        {
+            if (ActiveTime > 0f)
+                yield return new WaitForSeconds(ActiveTime);
+            yield break;
+        }
+
+        Vector3 targetDirection = (ctx.Player.position - ctx.Boss.position).normalized;
+
+        float timeElapsed = 0f;
+        float bulletTimeSection = ActiveTime/(_bulletAmount - 1);
+        int currentBullet = 0;
+        while (timeElapsed >= bulletTimeSection * currentBullet)
+        {
+            SpawnBullet(ctx.Boss.position, targetDirection);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
     }
 
     private GameObject SpawnBullet(Vector3 position, Vector3 vector)

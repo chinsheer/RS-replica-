@@ -1,34 +1,31 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PatternRunner : MonoBehaviour
 {
-    [SerializeField] private PatternData _startPattern;
-    [SerializeField] private PatternData[] _allPatterns;
-
-    private Dictionary<PatternData, PatternInstance> _map;
+    private PatternData[] _allPatterns;
     private PatternInstance _current;
-
-    void Start()
-    {
-        StartCoroutine(Loop());
-    }
+    private Action stopRoutine;
 
     public void Initialize(PatternData start, PatternData[] all)
     {
-        _startPattern = start;
         _allPatterns = all;
-        _map = BuildGraph(_allPatterns);
-        _current = _map[_startPattern];
+        Dictionary<PatternData, PatternInstance> map = BuildGraph();
+        _current = map[start];
+        StartCoroutine(Loop());
     }
 
     private IEnumerator Loop()
     {
-        while (_current != null)
+        PatternInstance current = _current;
+        Action nullCurrent = () => current = null;
+        stopRoutine = nullCurrent;
+        while (current != null)
         {
             int running = 0;
-            foreach (var routine in _current.GetRoutines(gameObject.GetComponent<IBossContext>(), () => running--))
+            foreach (var routine in current.GetRoutines(gameObject.GetComponent<IBossContext>(), () => running--))
             {
                 if (routine == null) continue;
                 running++;
@@ -38,17 +35,29 @@ public class PatternRunner : MonoBehaviour
             {
                 yield return null;
             }
-            _current = _current.ChooseNext(gameObject.GetComponent<IBossContext>());
+            if(current == null)
+            {
+                yield break;
+            } 
+            current = current.ChooseNext(gameObject.GetComponent<IBossContext>());
         }
     }
 
-    private Dictionary<PatternData, PatternInstance> BuildGraph(PatternData[] all)
+    public void Stop()
+    {
+        _current = null;
+        stopRoutine?.Invoke();
+        stopRoutine = null;
+    }
+
+
+    public Dictionary<PatternData, PatternInstance> BuildGraph()
     {
         var map = new Dictionary<PatternData, PatternInstance>();
 
-        for (int i = 0; i < all.Length; i++)
+        for (int i = 0; i < _allPatterns.Length; i++)
         {
-            var data = all[i];
+            var data = _allPatterns[i];
             if (data != null && !map.ContainsKey(data))
                 map[data] = new PatternInstance(data);
         }
@@ -69,4 +78,6 @@ public class PatternRunner : MonoBehaviour
 
         return map;
     }
+
+
 }

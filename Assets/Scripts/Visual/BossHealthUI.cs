@@ -6,16 +6,45 @@ public class BossHealthUI : MonoBehaviour
 {
     public EnemyHealth Boss;
 
-    void Awake()
+    private UIDocument _uiDocument;
+    private ProgressBar _healthBar;
+
+    public void Initialize(EnemyHealth boss)
     {
+        if (_uiDocument == null) _uiDocument = GetComponent<UIDocument>();
+        var root = _uiDocument.rootVisualElement;
+        _healthBar = root.Q<ProgressBar>("BossHP");
+
+        Boss = boss;
         Boss.OnHealthChanged += UpdateHealthBar;
+        Boss.OnDeath += OnBossDied;
     }
 
-    void UpdateHealthBar(float currentHP)
+    void UpdateHealthBar(float currentHP, float maxHP)
     {
-        UIDocument uiDocument = gameObject.GetComponent<UIDocument>();
-        VisualElement root = uiDocument.rootVisualElement;
-        ProgressBar healthBar = root.Q<ProgressBar>("BossHP");
-        healthBar.value = currentHP / Boss.MaxHP * 100;
+        _healthBar.value = currentHP / maxHP * 100;
+    }
+
+    private void OnBossDied()
+    {
+        Cleanup();
+        Show(false); // hide the bar (or Destroy(gameObject) if you want)
+    }
+
+    private void Show(bool visible)
+    {
+        if (_uiDocument == null) _uiDocument = GetComponent<UIDocument>();
+        _uiDocument.rootVisualElement.style.display =
+            visible ? DisplayStyle.Flex : DisplayStyle.None;
+    }
+
+    private void Cleanup()
+    {
+        if (Boss != null)
+        {
+            Boss.OnHealthChanged -= UpdateHealthBar;
+            Boss.OnDeath -= OnBossDied;
+        }
+        Boss = null;
     }
 }

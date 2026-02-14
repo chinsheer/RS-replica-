@@ -3,29 +3,30 @@ using System.Collections.Generic;
 using System.Collections;
 
 public class EnemyController : MonoBehaviour, IBossContext
-{
+{    
+    private Transform _target;
     private PatternRunner _runner;
-    [SerializeField] private Transform _target;
-    [SerializeField] private EnemyHealth _health;
-    [SerializeField] private EnemyMinionManager _minionManager;
-    [SerializeField] private PatternData _startPattern;
-    [SerializeField] private PatternData[] _allPatterns;
+    private EnemyHealth _health;
+    private EnemyMinionManager _minionManager;
+    private BossPhaseController _phaseController;
 
     private bool _busy;
-
     // IBossContext implementation
     public Transform Boss => transform;
     public Transform Player => _target;
     public float currentHealth => _health.CurrentHP;
     public float maxHealth => _health.MaxHP;
 
-    void Awake()
+    public void Initialize(BossData data, GameObject player)
     {
         _runner = GetComponent<PatternRunner>();
-        if (_runner == null)
-        {
-            Debug.LogError("PatternRunner component missing on EnemyController GameObject.");
-        }
-        _runner.Initialize(_startPattern, _allPatterns);
+        _health = GetComponent<EnemyHealth>();
+        _minionManager = GetComponent<EnemyMinionManager>();
+        _phaseController = GetComponent<BossPhaseController>();
+        _target = player.transform;
+
+        _phaseController.Initialize(data.Phases);
+        _health.Initialize(data.MaxHP);
+        _minionManager.Initialize(data.MaxMinions);
     }
 }
