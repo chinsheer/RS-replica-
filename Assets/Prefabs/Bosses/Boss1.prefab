@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 8328923041707530999}
   - component: {fileID: 5051248792618231058}
   - component: {fileID: 7335690552626084189}
+  - component: {fileID: 2553485403551217451}
   m_Layer: 0
   m_Name: Boss1
   m_TagString: Enemy
@@ -319,11 +320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1f80b86a487130448062e90e99e9e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossAttackRunner
-  _startPattern: {fileID: 11400000, guid: f85e88f0f1a64464d8e206e617fdbeb4, type: 2}
-  _allPatterns:
-  - {fileID: 11400000, guid: f85e88f0f1a64464d8e206e617fdbeb4, type: 2}
-  - {fileID: 11400000, guid: 8a41622892c62f54bad0e690e216bd92, type: 2}
-  - {fileID: 11400000, guid: 43fa2f6c7d0185148bbf2488e033ea5a, type: 2}
 --- !u!114 &8328923041707530999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,3 +357,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4280f8479ac641e4c92fe2da67be9a8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMinionManager
+--- !u!114 &2553485403551217451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6152534787066740712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b807d50dca673914abded0b4ab54a799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossPhaseController

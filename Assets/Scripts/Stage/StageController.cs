@@ -18,7 +18,7 @@ public class StageController : MonoBehaviour
         for (int i = 0; i < _bossDatas.Length; i++)
         {
             BossData bossData = _bossDatas[i];
-            GameObject bossGO = Instantiate(bossData.bossPrefab, bossData.spawnPosition, Quaternion.identity);
+            GameObject bossGO = Instantiate(bossData.BossPrefab, bossData.SpawnPosition, Quaternion.identity);
             EnemyController enemyController = bossGO.GetComponent<EnemyController>();
             if (enemyController != null)
             {

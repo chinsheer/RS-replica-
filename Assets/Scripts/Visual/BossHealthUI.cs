@@ -20,9 +20,9 @@ public class BossHealthUI : MonoBehaviour
         Boss.OnDeath += OnBossDied;
     }
 
-    void UpdateHealthBar(float currentHP)
+    void UpdateHealthBar(float currentHP, float maxHP)
     {
-        _healthBar.value = currentHP / Boss.MaxHP * 100;
+        _healthBar.value = currentHP / maxHP * 100;
     }
 
     private void OnBossDied()

@@ -8,9 +8,9 @@ public class EnemyController : MonoBehaviour, IBossContext
     private PatternRunner _runner;
     private EnemyHealth _health;
     private EnemyMinionManager _minionManager;
+    private BossPhaseController _phaseController;
 
     private bool _busy;
-
     // IBossContext implementation
     public Transform Boss => transform;
     public Transform Player => _target;
@@ -22,10 +22,11 @@ public class EnemyController : MonoBehaviour, IBossContext
         _runner = GetComponent<PatternRunner>();
         _health = GetComponent<EnemyHealth>();
         _minionManager = GetComponent<EnemyMinionManager>();
+        _phaseController = GetComponent<BossPhaseController>();
         _target = player.transform;
 
-        _runner.Initialize(data.startPattern, data.allPatterns);
-        _health.Initialize(data.maxHp);
-        _minionManager.Initialize(data.maxMinions);
+        _phaseController.Initialize(data.Phases);
+        _health.Initialize(data.MaxHP);
+        _minionManager.Initialize(data.MaxMinions);
     }
 }
