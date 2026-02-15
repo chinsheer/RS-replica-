@@ -7,6 +7,8 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public int CurrentHP{ get { return _currentHP; } }
 
     public event Action<int> OnHealthChanged;
+
+    public StatusEffectManager StatusEffect;
     
     private int _currentHP;
 
@@ -18,6 +20,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     public void TakeDamage(DamageAttribute damage)
     {
+        if(StatusEffect.IsInvincible) return;
         _currentHP -= 1;
         _currentHP = Mathf.Clamp(_currentHP, 0, MaxHP);
         OnHealthChanged?.Invoke(_currentHP);

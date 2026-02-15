@@ -18,6 +18,6 @@ MonoBehaviour:
   _recoverTime: 0
   _indicatorPrefab: {fileID: 5430542660831025934, guid: 8a738427da6a7ec46ab654a772f74aee, type: 3}
   _laserPrefab: {fileID: 5430542660831025934, guid: 8a738427da6a7ec46ab654a772f74aee, type: 3}
-  width: 2
+  width: 1
   length: 10
   fadeOutDuration: 0.3

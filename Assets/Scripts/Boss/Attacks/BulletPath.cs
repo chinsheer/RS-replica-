@@ -12,11 +12,11 @@ public class BulletPath : AttackData
     [Header("Pattern")]
     [SerializeField] private BulletPathType _pathType = BulletPathType.ConeMaze;
     [SerializeField] private int _bulletAmount = 10;
-    [SerializeField] private float _coneAngle = 90f;
+    [SerializeField] private float _sectorAngle = 90f;
     public enum BulletPathType
     {
         Straight,
-        SineWave,
+        RandomSpread,
         Circular,
         ConeMaze,
         StraightBurst,
@@ -33,7 +33,34 @@ public class BulletPath : AttackData
         // Implementation for executing the bullet path attack
         if(_pathType == BulletPathType.ConeMaze) return ConeMazePattern(ctx);
         if(_pathType == BulletPathType.StraightBurst) return StraightBurstPattern(ctx);
+        if(_pathType == BulletPathType.RandomSpread) return RandomSpreadPattern(ctx);
+
         return null;
+    }
+
+    private IEnumerator RandomSpreadPattern(IBossContext ctx)
+    {
+        Vector3 targetAngle = (ctx.Player.position - ctx.Boss.position).normalized;
+        float floorAngle = -_sectorAngle / 2;
+        float ceilAngle = _sectorAngle / 2;
+
+        float elapsedTime = 0f;
+        int currentBullet = 0;
+        float bulletTimeSection = ActiveTime / _bulletAmount;
+        while (elapsedTime < ActiveTime)
+        {
+            if (currentBullet >= _bulletAmount) yield break;
+            while (elapsedTime >= bulletTimeSection * currentBullet)
+            {
+                float randomAngle = Random.Range(floorAngle, ceilAngle);
+                Vector3 randomDirection = Quaternion.Euler(0, 0, randomAngle) * targetAngle;
+                SpawnBullet(ctx.Boss.position, randomDirection);
+                currentBullet++;
+            }
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        yield return null;
     }
 
     private IEnumerator ConeMazePattern(IBossContext ctx)
@@ -46,9 +73,9 @@ public class BulletPath : AttackData
         }
 
         Vector3 targetAngle = (ctx.Player.position - ctx.Boss.position).normalized;
-        Vector3 floorDirection = Quaternion.Euler(0, 0, -_coneAngle/2) * targetAngle;
-        Vector3 ceilDirection = Quaternion.Euler(0, 0, _coneAngle/2) * targetAngle;
-        Quaternion bulletDirectionIncrement = Quaternion.Euler(0, 0, _coneAngle / _bulletAmount);
+        Vector3 floorDirection = Quaternion.Euler(0, 0, -_sectorAngle/2) * targetAngle;
+        Vector3 ceilDirection = Quaternion.Euler(0, 0, _sectorAngle/2) * targetAngle;
+        Quaternion bulletDirectionIncrement = Quaternion.Euler(0, 0, _sectorAngle / _bulletAmount);
 
         Vector3 currentVector = floorDirection;
         float timeElapsed = 0f;
@@ -97,6 +124,7 @@ public class BulletPath : AttackData
         GameObject bullet = Instantiate(_bulletPrefab, position, Quaternion.identity);
         bullet.GetComponent<Rigidbody2D>().linearVelocity =  vector * _bulletSpeed;
         bullet.transform.position = position;
+        bullet.transform.right = vector;
         bullet.layer = LayerMask.NameToLayer(_enemyAttackLayerName);
         return bullet;
     }

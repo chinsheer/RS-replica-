@@ -40,8 +40,8 @@ public class EnemyLaser : AttackData
         GameObject laser = Instantiate(_laserPrefab, ctx.Boss.position, Quaternion.identity);
         SpriteRenderer laserSprite = laser.GetComponent<SpriteRenderer>();
         laserSprite.size = new Vector2(length, width);
-        laserSprite.color = Color.red;
         laser.transform.right = _lastDirection;
+        laserSprite.color = new Color(1f, 0f, 0f, 1f);
         laser.GetComponent<Fade>().FadeOut(fadeOutDuration);
 
         DamageAttribute damageAttribute = new DamageAttribute

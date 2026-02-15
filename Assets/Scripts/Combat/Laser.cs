@@ -8,6 +8,6 @@ public class Laser : MonoBehaviour
     };
     void OnTriggerEnter2D(Collider2D other)
     {
-        other.GetComponent<Hurtbox>().Owner.TakeDamage(Damage);
+        other.GetComponent<Hurtbox>().DamageOwner.TakeDamage(Damage);
     }
 }

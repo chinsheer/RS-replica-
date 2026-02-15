@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7325668cf0ab62a47a2453d59f22b93b, type: 3}
   m_Name: SL-CB
   m_EditorClassIdentifier: Assembly-CSharp::PatternEdgeData
-  NextPattern: {fileID: 11400000, guid: a01fbaf69ed641543873f99bdbea2f65, type: 2}
+  NextPattern: {fileID: 11400000, guid: 9c9ac91f8670615458cc55f3cd4943f0, type: 2}
   BaseWeight: 1

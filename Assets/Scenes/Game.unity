@@ -711,6 +711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StatusEffects
   MaxHP: 7
+  StatusEffect: {fileID: 542255671}
 --- !u!114 &542255671
 MonoBehaviour:
   m_ObjectHideFlags: 0

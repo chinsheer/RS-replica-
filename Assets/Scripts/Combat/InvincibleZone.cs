@@ -7,17 +7,26 @@ public class InvincibleZone : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.TryGetComponent<PlayerStatusEffect>(out PlayerStatusEffect statusEffect))
+        if(collision.TryGetComponent<Hurtbox>(out Hurtbox hurtbox))
         {
-            statusEffect.GrantZoneInvincibility();
+            if(hurtbox.StatusOwner != null)
+            {
+                StatusEffectManager statusEffect = hurtbox.StatusOwner.GetStatusEffect();
+
+                statusEffect.GrantZoneInvincibility();
+            }
         }
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.TryGetComponent<PlayerStatusEffect>(out PlayerStatusEffect statusEffect))
+        if(collision.TryGetComponent<Hurtbox>(out Hurtbox hurtbox))
         {
-            statusEffect.RevokeZoneInvincibility();
+            if(hurtbox.StatusOwner != null)
+            {
+                StatusEffectManager statusEffect = hurtbox.StatusOwner.GetStatusEffect();
+                statusEffect.RevokeZoneInvincibility();
+            }
         }
     }
 }

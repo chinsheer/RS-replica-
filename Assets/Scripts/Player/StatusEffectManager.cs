@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerStatusEffect : MonoBehaviour
+public class StatusEffectManager : MonoBehaviour, IStatusReceiver
 {
     private float _invincibleUntil;
     private bool _isInZoneInvincibility = false;
@@ -22,4 +22,8 @@ public class PlayerStatusEffect : MonoBehaviour
         _isInZoneInvincibility = false;
     }
 
+    public StatusEffectManager GetStatusEffect()
+    {
+        return this;
+    }
 }

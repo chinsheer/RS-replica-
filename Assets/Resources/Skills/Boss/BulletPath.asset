@@ -16,7 +16,7 @@ MonoBehaviour:
   _chargeTime: 0
   _activeTime: 0.5
   _recoverTime: 0
-  _bulletPrefab: {fileID: 6990165070297850032, guid: 06f38a83c91dba344a7afaf19116bff0, type: 3}
+  _bulletPrefab: {fileID: 2144985430811546140, guid: 6d5dc0daee13311478883bd7eadeca50, type: 3}
   _bulletSpeed: 3
   _enemyAttackLayerName: EnemyAttack
   _pathType: 3
