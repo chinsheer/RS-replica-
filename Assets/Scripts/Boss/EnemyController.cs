@@ -16,6 +16,7 @@ public class EnemyController : MonoBehaviour, IBossContext
     public Transform Player => _target;
     public float currentHealth => _health.CurrentHP;
     public float maxHealth => _health.MaxHP;
+    public MonoBehaviour Runner => _runner;
 
     public void Initialize(BossData data, GameObject player)
     {

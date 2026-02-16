@@ -11,6 +11,7 @@ public class MinionController : MonoBehaviour, IBossContext
     public Transform Player => _target;
     public float currentHealth => gameObject.GetComponent<EnemyHealth>().CurrentHP;
     public float maxHealth => gameObject.GetComponent<EnemyHealth>().MaxHP; 
+    public MonoBehaviour Runner => gameObject.GetComponent<PatternRunner>();
 
     public void Initialize(MinionData data, Transform target, Vector2 position)
     {

@@ -39,6 +39,11 @@ public class BulletPath : AttackData
         return null;
     }
 
+    public override IEnumerator Recover(IBossContext ctx)
+    {
+        yield return new WaitForSeconds(RecoverTime);
+    }
+
     private IEnumerator BounceBulletPattern(IBossContext ctx)
     {
         float elapsedTime = 0f;

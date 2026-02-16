@@ -37,4 +37,9 @@ public class SpawnBorder : AttackData
             Destroy(border);
         }
     }    
+
+    public override IEnumerator Recover(IBossContext ctx)
+    {
+        yield return new WaitForSeconds(RecoverTime);
+    }
 }

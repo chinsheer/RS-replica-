@@ -57,4 +57,9 @@ public class EnemyLaser : AttackData
             Destroy(laser);
         }
     }
+
+    public override IEnumerator Recover(IBossContext ctx)
+    {
+        yield return new WaitForSeconds(RecoverTime);
+    }
 }

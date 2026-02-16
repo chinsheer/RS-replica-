@@ -23,4 +23,9 @@ public class BossMinionSpawn : AttackData
 
         yield return new WaitForSeconds(ActiveTime);
     }
+
+    public override IEnumerator Recover(IBossContext ctx)
+    {
+        yield return new WaitForSeconds(RecoverTime);
+    }
 }

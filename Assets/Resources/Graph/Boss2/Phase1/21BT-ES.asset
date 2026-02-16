@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7325668cf0ab62a47a2453d59f22b93b, type: 3}
-  m_Name: 21BT-BT
+  m_Name: 21BT-ES
   m_EditorClassIdentifier: Assembly-CSharp::PatternEdgeData
-  NextPattern: {fileID: 11400000, guid: 5e98857ffa6c1cf4f8d17fbf722994a6, type: 2}
+  NextPattern: {fileID: 11400000, guid: e461d436af3cf9d4b9773bca894948ff, type: 2}
   BaseWeight: 1
