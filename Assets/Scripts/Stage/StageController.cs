@@ -7,6 +7,7 @@ public class StageController : MonoBehaviour
     [SerializeField] private GameObject _player;
 
     [SerializeField] private BossHealthUI _bossHealthUI;
+    [SerializeField] private int _startIndex = 0;
 
     private void Start()
     {
@@ -15,7 +16,7 @@ public class StageController : MonoBehaviour
 
     private IEnumerator RunStage()
     {
-        for (int i = 0; i < _bossDatas.Length; i++)
+        for (int i = _startIndex; i < _bossDatas.Length; i++)
         {
             BossData bossData = _bossDatas[i];
             GameObject bossGO = Instantiate(bossData.BossPrefab, bossData.SpawnPosition, Quaternion.identity);
