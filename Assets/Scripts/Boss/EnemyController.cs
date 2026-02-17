@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using System.Timers;
 
 public class EnemyController : MonoBehaviour, IBossContext
 {    
@@ -12,7 +13,6 @@ public class EnemyController : MonoBehaviour, IBossContext
     private EnvironmentController _environmentController;
     private SpriteRenderer _sr;
 
-    private bool _busy;
     // IBossContext implementation
     public Transform Boss => transform;
     public Transform Player => _target;
@@ -36,5 +36,17 @@ public class EnemyController : MonoBehaviour, IBossContext
         _phaseController.Initialize(data.Phases);
         _health.Initialize(data.MaxHP);
         _minionManager.Initialize(data.MaxMinions);
+    }
+
+    public IEnumerator MoveCenter(float duration)
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime <= duration)
+        {
+            transform.position = Vector3.Lerp(transform.position, Vector3.zero, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        yield return null;
     }
 }

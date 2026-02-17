@@ -1003,7 +1003,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b2a88c9218080bb42a7ab1d55f1aa484, type: 2}
   _player: {fileID: 542255666}
   _bossHealthUI: {fileID: 1209924878}
-  _startIndex: 0
+  _startIndex: 1
 --- !u!4 &560975719
 Transform:
   m_ObjectHideFlags: 0

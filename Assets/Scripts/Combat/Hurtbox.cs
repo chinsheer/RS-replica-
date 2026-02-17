@@ -10,4 +10,9 @@ public class Hurtbox : MonoBehaviour
         DamageOwner = GetComponentInParent<IDamageable>();
         StatusOwner = GetComponentInParent<IStatusReceiver>();
     }
+
+    public void ChangeLayer(string layerName)
+    {
+        gameObject.layer = LayerMask.NameToLayer(layerName);
+    }
 }
