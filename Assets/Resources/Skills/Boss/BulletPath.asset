@@ -21,4 +21,5 @@ MonoBehaviour:
   _enemyAttackLayerName: EnemyAttack
   _pathType: 3
   _bulletAmount: 10
-  _coneAngle: 90
+  _sectorAngle: 90
+  _destroyBulletsOnRecover: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StageController : MonoBehaviour
 {
@@ -12,6 +13,12 @@ public class StageController : MonoBehaviour
     private void Start()
     {
         StartCoroutine(RunStage());
+        _player.GetComponent<PlayerHealth>().OnDeath += RestartStage;
+    }
+
+    private void RestartStage()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private IEnumerator RunStage()

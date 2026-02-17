@@ -12,6 +12,9 @@ public class MinionController : MonoBehaviour, IBossContext
     public float currentHealth => gameObject.GetComponent<EnemyHealth>().CurrentHP;
     public float maxHealth => gameObject.GetComponent<EnemyHealth>().MaxHP; 
     public MonoBehaviour Runner => gameObject.GetComponent<PatternRunner>();
+    public Wall WallInstance => null; // Minions do not interact with the wall
+    public Wall PlayerWallInstance => null; // Minions do not interact with the wall
+    public SpriteRenderer BossSR => gameObject.GetComponent<SpriteRenderer>();
 
     public void Initialize(MinionData data, Transform target, Vector2 position)
     {

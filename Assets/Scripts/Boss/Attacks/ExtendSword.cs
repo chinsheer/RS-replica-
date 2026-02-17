@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEngine.UIElements;
 [CreateAssetMenu(fileName = "Extend Sword", menuName = "Scriptable Objects/Attacks/Extend Sword")]
 public class ExtendSword : AttackData
 {
@@ -20,6 +21,7 @@ public class ExtendSword : AttackData
         Vector3 direction = (ctx.Player.position - StartPosition).normalized;
         _lastDirection = direction;
         SpriteRenderer indicatorSprite = indicator.GetComponent<SpriteRenderer>();
+        BoxCollider2D indicatorCollider = indicator.GetComponent<BoxCollider2D>();
         indicatorSprite.drawMode = SpriteDrawMode.Sliced;
 
         // Calculate the collision point with the border to determine the length of the sword
@@ -27,7 +29,8 @@ public class ExtendSword : AttackData
         _lastHitPoint = hitPoint;
         float length = Vector2.Distance(StartPosition, _lastHitPoint);
         indicator.transform.right = direction;
-        indicatorSprite.size = new Vector2(length, width);
+        indicatorSprite.size = new Vector2(length * 3f, width);
+        indicatorCollider.size = new Vector2(length * 3f, width);
         indicatorSprite.color = new Color(1f, 0f, 0f, 0.3f);
         indicator.layer = LayerMask.NameToLayer("EnemyAttackIndicator");
 
@@ -42,8 +45,10 @@ public class ExtendSword : AttackData
     {
         GameObject sword = Instantiate(_swordPrefab, StartPosition, Quaternion.identity);
         SpriteRenderer swordSprite = sword.GetComponent<SpriteRenderer>();
+        BoxCollider2D swordCollider = sword.GetComponent<BoxCollider2D>();
         swordSprite.drawMode = SpriteDrawMode.Sliced;
-        swordSprite.size = new Vector2(Vector2.Distance(StartPosition, _lastHitPoint), width);
+        swordSprite.size = new Vector2(Vector2.Distance(StartPosition, _lastHitPoint) * 3f, width);
+        swordCollider.size = new Vector2(Vector2.Distance(StartPosition, _lastHitPoint) * 3f, width);
         sword.transform.right = _lastDirection;
         swordSprite.color = new Color(1f, 0f, 0f, 1f);
 

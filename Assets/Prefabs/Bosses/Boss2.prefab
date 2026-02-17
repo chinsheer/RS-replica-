@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 5051248792618231058}
   - component: {fileID: 7335690552626084189}
   - component: {fileID: 2553485403551217451}
+  - component: {fileID: 6096118082417565436}
   m_Layer: 10
   m_Name: Boss2
   m_TagString: Enemy
@@ -369,3 +370,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b807d50dca673914abded0b4ab54a799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossPhaseController
+--- !u!114 &6096118082417565436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6152534787066740712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101c92bcb1ae82a4a9fe45d1406e2d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnvironmentController
+  WallInstance: {fileID: 0}

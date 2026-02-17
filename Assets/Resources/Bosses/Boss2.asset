@@ -19,8 +19,12 @@ MonoBehaviour:
   MaxMinions: 3
   Phases:
   - HPThreshold: 0
-    StartPattern: {fileID: 11400000, guid: e461d436af3cf9d4b9773bca894948ff, type: 2}
+    StartPattern: {fileID: 11400000, guid: 93a2b50383a8b5643b0ac92cd5d55962, type: 2}
     AllPatterns:
     - {fileID: 11400000, guid: 5e98857ffa6c1cf4f8d17fbf722994a6, type: 2}
     - {fileID: 11400000, guid: e461d436af3cf9d4b9773bca894948ff, type: 2}
+    - {fileID: 11400000, guid: 93a2b50383a8b5643b0ac92cd5d55962, type: 2}
+    - {fileID: 11400000, guid: 8457231722fe9ab4a8cb0213c4c27fcf, type: 2}
+    - {fileID: 11400000, guid: 9d79b318f101070448f0923ff42faea2, type: 2}
+    - {fileID: 11400000, guid: 2a0e8be04a2e9274f971f4116832b55a, type: 2}
   SelfLoopPenalty: 0

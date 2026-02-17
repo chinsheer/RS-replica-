@@ -22,3 +22,4 @@ MonoBehaviour:
   _pathType: 5
   _bulletAmount: 10
   _sectorAngle: 90
+  _destroyBulletsOnRecover: 0

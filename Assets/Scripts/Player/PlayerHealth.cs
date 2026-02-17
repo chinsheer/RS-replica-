@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public int CurrentHP{ get { return _currentHP; } }
 
     public event Action<int> OnHealthChanged;
+    public event Action OnDeath;
 
     public StatusEffectManager StatusEffect;
     
@@ -27,6 +28,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         StatusEffect.GrantInvincible(2f);
         if(_currentHP <= 0)
         {
+            OnDeath?.Invoke();
             Destroy(gameObject);
         }
     }

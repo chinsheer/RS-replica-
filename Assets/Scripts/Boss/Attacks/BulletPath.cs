@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using System;
+using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "BulletPath", menuName = "Scriptable Objects/Attacks/BossBulletPath")]
 public class BulletPath : AttackData
@@ -13,6 +15,11 @@ public class BulletPath : AttackData
     [SerializeField] private BulletPathType _pathType = BulletPathType.ConeMaze;
     [SerializeField] private int _bulletAmount = 10;
     [SerializeField] private float _sectorAngle = 90f;
+
+    [Header("Bullet Settings")]
+    [SerializeField] private bool _destroyBulletsOnRecover = false;
+
+    private List<GameObject> _spawnedBullets;
     public enum BulletPathType
     {
         Straight,
@@ -41,6 +48,19 @@ public class BulletPath : AttackData
 
     public override IEnumerator Recover(IBossContext ctx)
     {
+        if (_destroyBulletsOnRecover)
+        {
+            if (_spawnedBullets != null)
+            {
+                foreach (GameObject bullet in _spawnedBullets)
+                {
+                    if (bullet != null)
+                    {
+                        Destroy(bullet);
+                    }
+                }
+            }
+        }
         yield return new WaitForSeconds(RecoverTime);
     }
 
@@ -57,7 +77,7 @@ public class BulletPath : AttackData
             if (currentBullet >= _bulletAmount) yield break;
             if (isBounced == true)
             {
-                Vector3 targetDirection = Random.insideUnitCircle.normalized;
+                Vector3 targetDirection = UnityEngine.Random.insideUnitCircle.normalized;
                 for (int i = 0; i < 3; i++)
                 {
                     int index = currentBullet * 3 + i;
@@ -100,7 +120,7 @@ public class BulletPath : AttackData
             if (currentBullet >= _bulletAmount) yield break;
             while (elapsedTime >= bulletTimeSection * currentBullet)
             {
-                float randomAngle = Random.Range(floorAngle, ceilAngle);
+                float randomAngle = UnityEngine.Random.Range(floorAngle, ceilAngle);
                 Vector3 randomDirection = Quaternion.Euler(0, 0, randomAngle) * targetAngle;
                 SpawnBullet(ctx.Boss.position, randomDirection);
                 currentBullet++;
@@ -173,6 +193,11 @@ public class BulletPath : AttackData
         bullet.transform.position = position;
         bullet.transform.right = vector;
         bullet.layer = LayerMask.NameToLayer(_enemyAttackLayerName);
+        if (_spawnedBullets == null)
+        {
+            _spawnedBullets = new List<GameObject>();
+        }
+        _spawnedBullets.Add(bullet);
         return bullet;
     }
 }
