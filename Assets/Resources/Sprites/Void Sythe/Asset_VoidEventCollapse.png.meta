@@ -1,0 +1,1668 @@
+fileFormatVersion: 2
+guid: 074133f6432fded47ac1444dfecd382e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5264033210517592002
+    second: Asset_VoidEventCollapse_0
+  - first:
+      213: 4096099527792730473
+    second: Asset_VoidEventCollapse_1
+  - first:
+      213: 4092737854698023264
+    second: Asset_VoidEventCollapse_2
+  - first:
+      213: 6963232722739288605
+    second: Asset_VoidEventCollapse_3
+  - first:
+      213: -2872560928357163929
+    second: Asset_VoidEventCollapse_4
+  - first:
+      213: 489579113655707102
+    second: Asset_VoidEventCollapse_5
+  - first:
+      213: -811230338782894475
+    second: Asset_VoidEventCollapse_6
+  - first:
+      213: -6087315429196903936
+    second: Asset_VoidEventCollapse_7
+  - first:
+      213: 2235401326333078073
+    second: Asset_VoidEventCollapse_8
+  - first:
+      213: -6079998243949552098
+    second: Asset_VoidEventCollapse_9
+  - first:
+      213: -6271095066597364491
+    second: Asset_VoidEventCollapse_10
+  - first:
+      213: 6421391503214791111
+    second: Asset_VoidEventCollapse_11
+  - first:
+      213: -2724552948376134320
+    second: Asset_VoidEventCollapse_12
+  - first:
+      213: -5496429882873873478
+    second: Asset_VoidEventCollapse_13
+  - first:
+      213: -6857285823540576735
+    second: Asset_VoidEventCollapse_14
+  - first:
+      213: -3458348106458641271
+    second: Asset_VoidEventCollapse_15
+  - first:
+      213: 7877407066233149021
+    second: Asset_VoidEventCollapse_16
+  - first:
+      213: -2606844059571401245
+    second: Asset_VoidEventCollapse_17
+  - first:
+      213: -2490128989700871396
+    second: Asset_VoidEventCollapse_18
+  - first:
+      213: 8141183368550182652
+    second: Asset_VoidEventCollapse_19
+  - first:
+      213: -7106439569927546177
+    second: Asset_VoidEventCollapse_20
+  - first:
+      213: -4653023873429272077
+    second: Asset_VoidEventCollapse_21
+  - first:
+      213: -1889583242533212027
+    second: Asset_VoidEventCollapse_22
+  - first:
+      213: -3466780552096333974
+    second: Asset_VoidEventCollapse_23
+  - first:
+      213: 8859325069501688031
+    second: Asset_VoidEventCollapse_24
+  - first:
+      213: 2003644077227321272
+    second: Asset_VoidEventCollapse_25
+  - first:
+      213: -3014570199407101228
+    second: Asset_VoidEventCollapse_26
+  - first:
+      213: -5988657540095200614
+    second: Asset_VoidEventCollapse_27
+  - first:
+      213: -1148586582495608253
+    second: Asset_VoidEventCollapse_28
+  - first:
+      213: 3454229369617728018
+    second: Asset_VoidEventCollapse_29
+  - first:
+      213: -883275108726409108
+    second: Asset_VoidEventCollapse_30
+  - first:
+      213: -8754811778767277387
+    second: Asset_VoidEventCollapse_31
+  - first:
+      213: 5584657523130617907
+    second: Asset_VoidEventCollapse_32
+  - first:
+      213: -8330263428395645577
+    second: Asset_VoidEventCollapse_33
+  - first:
+      213: -5794459036157706386
+    second: Asset_VoidEventCollapse_34
+  - first:
+      213: -2743311913793195817
+    second: Asset_VoidEventCollapse_35
+  - first:
+      213: 2895914009378043590
+    second: Asset_VoidEventCollapse_36
+  - first:
+      213: 7912883797106235250
+    second: Asset_VoidEventCollapse_37
+  - first:
+      213: 6073719825138212504
+    second: Asset_VoidEventCollapse_38
+  - first:
+      213: 1781795185184953857
+    second: Asset_VoidEventCollapse_39
+  - first:
+      213: 1725360845064405067
+    second: Asset_VoidEventCollapse_40
+  - first:
+      213: 3504423622204875273
+    second: Asset_VoidEventCollapse_41
+  - first:
+      213: 8996707211961313437
+    second: Asset_VoidEventCollapse_42
+  - first:
+      213: -5716200605671108243
+    second: Asset_VoidEventCollapse_43
+  - first:
+      213: 497392161249651338
+    second: Asset_VoidEventCollapse_44
+  - first:
+      213: -5035080780167826982
+    second: Asset_VoidEventCollapse_45
+  - first:
+      213: -2078521591187033464
+    second: Asset_VoidEventCollapse_46
+  - first:
+      213: 1502148399886510288
+    second: Asset_VoidEventCollapse_47
+  - first:
+      213: 5661822415045706466
+    second: Asset_VoidEventCollapse_48
+  - first:
+      213: 4741929721722370110
+    second: Asset_VoidEventCollapse_49
+  - first:
+      213: -8195293520634911593
+    second: Asset_VoidEventCollapse_50
+  - first:
+      213: 536137968703780374
+    second: Asset_VoidEventCollapse_51
+  - first:
+      213: -1206754571568628402
+    second: Asset_VoidEventCollapse_52
+  - first:
+      213: 2042316125913467343
+    second: Asset_VoidEventCollapse_53
+  - first:
+      213: -862933815840232574
+    second: Asset_VoidEventCollapse_54
+  - first:
+      213: 1762612279134720454
+    second: Asset_VoidEventCollapse_55
+  - first:
+      213: 1204363623134891898
+    second: Asset_VoidEventCollapse_56
+  - first:
+      213: -8866681139117413682
+    second: Asset_VoidEventCollapse_57
+  - first:
+      213: -1135143844709014889
+    second: Asset_VoidEventCollapse_58
+  - first:
+      213: -5372109291077764086
+    second: Asset_VoidEventCollapse_59
+  - first:
+      213: -8795045808928574398
+    second: Asset_VoidEventCollapse_60
+  - first:
+      213: 6101755965264027825
+    second: Asset_VoidEventCollapse_61
+  - first:
+      213: -9199767314363196866
+    second: Asset_VoidEventCollapse_62
+  - first:
+      213: 5395726207024544563
+    second: Asset_VoidEventCollapse_63
+  - first:
+      213: -6153619433475824698
+    second: Asset_VoidEventCollapse_64
+  - first:
+      213: -6730578495464886096
+    second: Asset_VoidEventCollapse_65
+  - first:
+      213: -4775821374429491655
+    second: Asset_VoidEventCollapse_66
+  - first:
+      213: 2979344964313794907
+    second: Asset_VoidEventCollapse_67
+  - first:
+      213: 6818689334018883634
+    second: Asset_VoidEventCollapse_68
+  - first:
+      213: 1266381176418259946
+    second: Asset_VoidEventCollapse_69
+  - first:
+      213: 3971827394971970232
+    second: Asset_VoidEventCollapse_70
+  - first:
+      213: 3268526638912251151
+    second: Asset_VoidEventCollapse_71
+  - first:
+      213: 7304804657585546967
+    second: Asset_VoidEventCollapse_72
+  - first:
+      213: 5104965606172967372
+    second: Asset_VoidEventCollapse_73
+  - first:
+      213: -3268278232154196042
+    second: Asset_VoidEventCollapse_74
+  - first:
+      213: -5526625168670351077
+    second: Asset_VoidEventCollapse_75
+  - first:
+      213: -1911414130600827538
+    second: Asset_VoidEventCollapse_76
+  - first:
+      213: 3324732270263034515
+    second: Asset_VoidEventCollapse_77
+  - first:
+      213: -2516470564543441448
+    second: Asset_VoidEventCollapse_78
+  - first:
+      213: -2661202007888487492
+    second: Asset_VoidEventCollapse_79
+  - first:
+      213: 6228217022395101514
+    second: Asset_VoidEventCollapse_80
+  - first:
+      213: -8203267130830854279
+    second: Asset_VoidEventCollapse_81
+  - first:
+      213: 7463065520403343332
+    second: Asset_VoidEventCollapse_82
+  - first:
+      213: -1338241799419640236
+    second: Asset_VoidEventCollapse_83
+  - first:
+      213: -7952109091925766285
+    second: Asset_VoidEventCollapse_84
+  - first:
+      213: 2406548331892025302
+    second: Asset_VoidEventCollapse_85
+  - first:
+      213: 422405274021493628
+    second: Asset_VoidEventCollapse_86
+  - first:
+      213: -2751961876246503600
+    second: Asset_VoidEventCollapse_87
+  - first:
+      213: -2201410115205578681
+    second: Asset_VoidEventCollapse_88
+  - first:
+      213: 8293395192821151404
+    second: Asset_VoidEventCollapse_89
+  - first:
+      213: 7179727734446292749
+    second: Asset_VoidEventCollapse_90
+  - first:
+      213: 8325301945746767125
+    second: Asset_VoidEventCollapse_91
+  - first:
+      213: -4073865660736923914
+    second: Asset_VoidEventCollapse_92
+  - first:
+      213: -3349971054568567301
+    second: Asset_VoidEventCollapse_93
+  - first:
+      213: -2074761792262577107
+    second: Asset_VoidEventCollapse_94
+  - first:
+      213: -3175579536789491732
+    second: Asset_VoidEventCollapse_95
+  - first:
+      213: 1898755844370898630
+    second: Asset_VoidEventCollapse_96
+  - first:
+      213: -7741698690082304494
+    second: Asset_VoidEventCollapse_97
+  - first:
+      213: 4043825718792122634
+    second: Asset_VoidEventCollapse_98
+  - first:
+      213: 8039655581272615042
+    second: Asset_VoidEventCollapse_99
+  - first:
+      213: -2141672428278694369
+    second: Asset_VoidEventCollapse_100
+  - first:
+      213: -2336813830695171473
+    second: Asset_VoidEventCollapse_101
+  - first:
+      213: -803873379396826846
+    second: Asset_VoidEventCollapse_102
+  - first:
+      213: 4310941019116457747
+    second: Asset_VoidEventCollapse_103
+  - first:
+      213: -1972194853404588573
+    second: Asset_VoidEventCollapse_104
+  - first:
+      213: 113622369599691090
+    second: Asset_VoidEventCollapse_105
+  - first:
+      213: 5274399194017826994
+    second: Asset_VoidEventCollapse_106
+  - first:
+      213: 1884242318805530572
+    second: Asset_VoidEventCollapse_107
+  - first:
+      213: 3824417142651634665
+    second: Asset_VoidEventCollapse_108
+  - first:
+      213: 7805707082365210264
+    second: Asset_VoidEventCollapse_109
+  - first:
+      213: -8225841109663232423
+    second: Asset_VoidEventCollapse_110
+  - first:
+      213: 1208110588317429125
+    second: Asset_VoidEventCollapse_111
+  - first:
+      213: 2477770937489092216
+    second: Asset_VoidEventCollapse_112
+  - first:
+      213: 954276343680160149
+    second: Asset_VoidEventCollapse_113
+  - first:
+      213: 1236865778071843249
+    second: Asset_VoidEventCollapse_114
+  - first:
+      213: -4608955766646965445
+    second: Asset_VoidEventCollapse_115
+  - first:
+      213: 6661212238963862377
+    second: Asset_VoidEventCollapse_116
+  - first:
+      213: -7946523309620205807
+    second: Asset_VoidEventCollapse_117
+  - first:
+      213: 5817564623129505459
+    second: Asset_VoidEventCollapse_118
+  - first:
+      213: 6571418269270845607
+    second: Asset_VoidEventCollapse_119
+  - first:
+      213: -5431843376080137757
+    second: Asset_VoidEventCollapse_120
+  - first:
+      213: -8458219084607804625
+    second: Asset_VoidEventCollapse_121
+  - first:
+      213: 4256351206863875356
+    second: Asset_VoidEventCollapse_122
+  - first:
+      213: 8572552572558564908
+    second: Asset_VoidEventCollapse_123
+  - first:
+      213: 923009263133153350
+    second: Asset_VoidEventCollapse_124
+  - first:
+      213: -2600459433774320211
+    second: Asset_VoidEventCollapse_125
+  - first:
+      213: 8821829016452849848
+    second: Asset_VoidEventCollapse_126
+  - first:
+      213: -220646951604601267
+    second: Asset_VoidEventCollapse_127
+  - first:
+      213: -2632699842711675606
+    second: Asset_VoidEventCollapse_128
+  - first:
+      213: -7214083906601666326
+    second: Asset_VoidEventCollapse_129
+  - first:
+      213: -5319779733156859442
+    second: Asset_VoidEventCollapse_130
+  - first:
+      213: 5065646613436458693
+    second: Asset_VoidEventCollapse_131
+  - first:
+      213: 762287740447635736
+    second: Asset_VoidEventCollapse_132
+  - first:
+      213: -214392167209140976
+    second: Asset_VoidEventCollapse_133
+  - first:
+      213: 3267795110902255570
+    second: Asset_VoidEventCollapse_134
+  - first:
+      213: 6192964716886745870
+    second: Asset_VoidEventCollapse_135
+  - first:
+      213: -6509858726569498869
+    second: Asset_VoidEventCollapse_136
+  - first:
+      213: -6320484001173081116
+    second: Asset_VoidEventCollapse_137
+  - first:
+      213: 5308899561220297695
+    second: Asset_VoidEventCollapse_138
+  - first:
+      213: 839515900721497618
+    second: Asset_VoidEventCollapse_139
+  - first:
+      213: 2314168847695198212
+    second: Asset_VoidEventCollapse_140
+  - first:
+      213: 5213928072285475643
+    second: Asset_VoidEventCollapse_141
+  - first:
+      213: 7964746102293001155
+    second: Asset_VoidEventCollapse_142
+  - first:
+      213: 5380399642259046971
+    second: Asset_VoidEventCollapse_143
+  - first:
+      213: 4033968693517253021
+    second: Asset_VoidEventCollapse_144
+  - first:
+      213: -1649581561358662938
+    second: Asset_VoidEventCollapse_145
+  - first:
+      213: -7325985072556503089
+    second: Asset_VoidEventCollapse_146
+  - first:
+      213: 1685605418975142642
+    second: Asset_VoidEventCollapse_147
+  - first:
+      213: -4581184275311854728
+    second: Asset_VoidEventCollapse_148
+  - first:
+      213: 9062344268935607370
+    second: Asset_VoidEventCollapse_149
+  - first:
+      213: 3795075692563280190
+    second: Asset_VoidEventCollapse_150
+  - first:
+      213: -4700249590924868493
+    second: Asset_VoidEventCollapse_151
+  - first:
+      213: 1458576098926868853
+    second: Asset_VoidEventCollapse_152
+  - first:
+      213: -1073889722023386959
+    second: Asset_VoidEventCollapse_153
+  - first:
+      213: 4311292602066186070
+    second: Asset_VoidEventCollapse_154
+  - first:
+      213: 7713696527105446918
+    second: Asset_VoidEventCollapse_155
+  - first:
+      213: 2749045363917655616
+    second: Asset_VoidEventCollapse_156
+  - first:
+      213: -9001603000170295235
+    second: Asset_VoidEventCollapse_157
+  - first:
+      213: -1732461705658952377
+    second: Asset_VoidEventCollapse_158
+  - first:
+      213: 4570545210796687317
+    second: Asset_VoidEventCollapse_159
+  - first:
+      213: -8041558957606125414
+    second: Asset_VoidEventCollapse_160
+  - first:
+      213: 5198099066052466571
+    second: Asset_VoidEventCollapse_161
+  - first:
+      213: -2779503429254935606
+    second: Asset_VoidEventCollapse_162
+  - first:
+      213: -953948767206120588
+    second: Asset_VoidEventCollapse_163
+  - first:
+      213: -546481177801088665
+    second: Asset_VoidEventCollapse_164
+  - first:
+      213: -5472936735831478698
+    second: Asset_VoidEventCollapse_165
+  - first:
+      213: 7180268267418411831
+    second: Asset_VoidEventCollapse_166
+  - first:
+      213: -4621693106669786226
+    second: Asset_VoidEventCollapse_167
+  - first:
+      213: -7116132905216256972
+    second: Asset_VoidEventCollapse_168
+  - first:
+      213: -3154405015545200488
+    second: Asset_VoidEventCollapse_169
+  - first:
+      213: 4337572961494857183
+    second: Asset_VoidEventCollapse_170
+  - first:
+      213: 6555859766764645334
+    second: Asset_VoidEventCollapse_171
+  - first:
+      213: 7095102307374688370
+    second: Asset_VoidEventCollapse_172
+  - first:
+      213: -4358559087290103576
+    second: Asset_VoidEventCollapse_173
+  - first:
+      213: 1195820555146663772
+    second: Asset_VoidEventCollapse_174
+  - first:
+      213: 1428647215931672656
+    second: Asset_VoidEventCollapse_175
+  - first:
+      213: 3686250451510077991
+    second: Asset_VoidEventCollapse_176
+  - first:
+      213: 1338900785318569104
+    second: Asset_VoidEventCollapse_177
+  - first:
+      213: -9113667951991889710
+    second: Asset_VoidEventCollapse_178
+  - first:
+      213: -125272477988417939
+    second: Asset_VoidEventCollapse_179
+  - first:
+      213: 6804554958832399116
+    second: Asset_VoidEventCollapse_180
+  - first:
+      213: 3774307336538551837
+    second: Asset_VoidEventCollapse_181
+  - first:
+      213: -9101043028559373296
+    second: Asset_VoidEventCollapse_182
+  - first:
+      213: -6583578501258527663
+    second: Asset_VoidEventCollapse_183
+  - first:
+      213: 72916197173504539
+    second: Asset_VoidEventCollapse_184
+  - first:
+      213: 6705016315159579398
+    second: Asset_VoidEventCollapse_185
+  - first:
+      213: -4935176418241595759
+    second: Asset_VoidEventCollapse_186
+  - first:
+      213: 583811452464114904
+    second: Asset_VoidEventCollapse_187
+  - first:
+      213: 6497777993222046698
+    second: Asset_VoidEventCollapse_188
+  - first:
+      213: -8490352743655025529
+    second: Asset_VoidEventCollapse_189
+  - first:
+      213: 8379181296447046413
+    second: Asset_VoidEventCollapse_190
+  - first:
+      213: 5406843641926497906
+    second: Asset_VoidEventCollapse_191
+  - first:
+      213: 1355656593964026069
+    second: Asset_VoidEventCollapse_192
+  - first:
+      213: -2432639284078418200
+    second: Asset_VoidEventCollapse_193
+  - first:
+      213: -8724608599352604637
+    second: Asset_VoidEventCollapse_194
+  - first:
+      213: -7191269735253907285
+    second: Asset_VoidEventCollapse_195
+  - first:
+      213: 4285393278203964607
+    second: Asset_VoidEventCollapse_196
+  - first:
+      213: 4915669257369689674
+    second: Asset_VoidEventCollapse_197
+  - first:
+      213: 2554225435871853237
+    second: Asset_VoidEventCollapse_198
+  - first:
+      213: -2761242803236436638
+    second: Asset_VoidEventCollapse_199
+  - first:
+      213: 4865447700089148462
+    second: Asset_VoidEventCollapse_200
+  - first:
+      213: 1633517013138378612
+    second: Asset_VoidEventCollapse_201
+  - first:
+      213: 4368043479749647555
+    second: Asset_VoidEventCollapse_202
+  - first:
+      213: -5794961745481392763
+    second: Asset_VoidEventCollapse_203
+  - first:
+      213: -803152812630854360
+    second: Asset_VoidEventCollapse_204
+  - first:
+      213: 2873516891532590667
+    second: Asset_VoidEventCollapse_205
+  - first:
+      213: 9710324593972516
+    second: Asset_VoidEventCollapse_206
+  - first:
+      213: -6218432241242580086
+    second: Asset_VoidEventCollapse_207
+  - first:
+      213: -3955433884386371349
+    second: Asset_VoidEventCollapse_208
+  - first:
+      213: -3240552515648213646
+    second: Asset_VoidEventCollapse_209
+  - first:
+      213: 5144389223989491703
+    second: Asset_VoidEventCollapse_210
+  - first:
+      213: 993929951016919588
+    second: Asset_VoidEventCollapse_211
+  - first:
+      213: 5924065472734682709
+    second: Asset_VoidEventCollapse_212
+  - first:
+      213: -1566368723263083650
+    second: Asset_VoidEventCollapse_213
+  - first:
+      213: -5424355955188899806
+    second: Asset_VoidEventCollapse_214
+  - first:
+      213: -4231784870901855799
+    second: Asset_VoidEventCollapse_215
+  - first:
+      213: 7515979307141783565
+    second: Asset_VoidEventCollapse_216
+  - first:
+      213: -3635666951025538213
+    second: Asset_VoidEventCollapse_217
+  - first:
+      213: -8650407135291206306
+    second: Asset_VoidEventCollapse_218
+  - first:
+      213: -9090285669459767663
+    second: Asset_VoidEventCollapse_219
+  - first:
+      213: 3214384306651255088
+    second: Asset_VoidEventCollapse_220
+  - first:
+      213: 2624603793389464447
+    second: Asset_VoidEventCollapse_221
+  - first:
+      213: 770135750013262199
+    second: Asset_VoidEventCollapse_222
+  - first:
+      213: 272476953883264270
+    second: Asset_VoidEventCollapse_223
+  - first:
+      213: -3238479376164218137
+    second: Asset_VoidEventCollapse_224
+  - first:
+      213: 5755302073841238387
+    second: Asset_VoidEventCollapse_225
+  - first:
+      213: 3049690922487032251
+    second: Asset_VoidEventCollapse_226
+  - first:
+      213: -924775550330293077
+    second: Asset_VoidEventCollapse_227
+  - first:
+      213: 4657172147979280465
+    second: Asset_VoidEventCollapse_228
+  - first:
+      213: 817115519566177226
+    second: Asset_VoidEventCollapse_229
+  - first:
+      213: -3180025316403391335
+    second: Asset_VoidEventCollapse_230
+  - first:
+      213: -139015841498801796
+    second: Asset_VoidEventCollapse_231
+  - first:
+      213: -3333877319009027544
+    second: Asset_VoidEventCollapse_232
+  - first:
+      213: -3817170451496369653
+    second: Asset_VoidEventCollapse_233
+  - first:
+      213: 2711775871870712189
+    second: Asset_VoidEventCollapse_234
+  - first:
+      213: 8192757317500536638
+    second: Asset_VoidEventCollapse_235
+  - first:
+      213: -4586413094039386551
+    second: Asset_VoidEventCollapse_236
+  - first:
+      213: 2390279576171018347
+    second: Asset_VoidEventCollapse_237
+  - first:
+      213: 5323851803432065483
+    second: Asset_VoidEventCollapse_238
+  - first:
+      213: 3629550253940375477
+    second: Asset_VoidEventCollapse_239
+  - first:
+      213: 207107739875342305
+    second: Asset_VoidEventCollapse_240
+  - first:
+      213: 2592525994889137179
+    second: Asset_VoidEventCollapse_241
+  - first:
+      213: 2866547581093488752
+    second: Asset_VoidEventCollapse_242
+  - first:
+      213: -2035075986775316214
+    second: Asset_VoidEventCollapse_243
+  - first:
+      213: -1244107188680298496
+    second: Asset_VoidEventCollapse_244
+  - first:
+      213: 2360383088410328560
+    second: Asset_VoidEventCollapse_245
+  - first:
+      213: -5106319275480642789
+    second: Asset_VoidEventCollapse_246
+  - first:
+      213: 185008438706580905
+    second: Asset_VoidEventCollapse_247
+  - first:
+      213: -4861391547143056708
+    second: Asset_VoidEventCollapse_248
+  - first:
+      213: -4218863329866993437
+    second: Asset_VoidEventCollapse_249
+  - first:
+      213: -7253583160544199465
+    second: Asset_VoidEventCollapse_250
+  - first:
+      213: -6955166858023274523
+    second: Asset_VoidEventCollapse_251
+  - first:
+      213: -9162073825526466901
+    second: Asset_VoidEventCollapse_252
+  - first:
+      213: 572262473057453354
+    second: Asset_VoidEventCollapse_253
+  - first:
+      213: 1311755190637320770
+    second: Asset_VoidEventCollapse_254
+  - first:
+      213: -1454411134783824695
+    second: Asset_VoidEventCollapse_255
+  - first:
+      213: -4552608336132994983
+    second: Asset_VoidEventCollapse_256
+  - first:
+      213: -1629685233165340331
+    second: Asset_VoidEventCollapse_257
+  - first:
+      213: -6307762384409214013
+    second: Asset_VoidEventCollapse_258
+  - first:
+      213: -5660938634846619824
+    second: Asset_VoidEventCollapse_259
+  - first:
+      213: 5021376297349768908
+    second: Asset_VoidEventCollapse_260
+  - first:
+      213: 7262540364155670546
+    second: Asset_VoidEventCollapse_261
+  - first:
+      213: 9049288826137255486
+    second: Asset_VoidEventCollapse_262
+  - first:
+      213: 2628911648352813569
+    second: Asset_VoidEventCollapse_263
+  - first:
+      213: 3070842730541224180
+    second: Asset_VoidEventCollapse_264
+  - first:
+      213: -79977995344846960
+    second: Asset_VoidEventCollapse_265
+  - first:
+      213: -745047671531547765
+    second: Asset_VoidEventCollapse_266
+  - first:
+      213: -1625403574932507153
+    second: Asset_VoidEventCollapse_267
+  - first:
+      213: -4452144802420789859
+    second: Asset_VoidEventCollapse_268
+  - first:
+      213: 1401037040282334784
+    second: Asset_VoidEventCollapse_269
+  - first:
+      213: 7814756044909431783
+    second: Asset_VoidEventCollapse_270
+  - first:
+      213: 4502331495610389898
+    second: Asset_VoidEventCollapse_271
+  - first:
+      213: -75489976828752609
+    second: Asset_VoidEventCollapse_272
+  - first:
+      213: -5092035969611509789
+    second: Asset_VoidEventCollapse_273
+  - first:
+      213: 2729089266192884409
+    second: Asset_VoidEventCollapse_274
+  - first:
+      213: -1317945564165768151
+    second: Asset_VoidEventCollapse_275
+  - first:
+      213: 8955795932299444291
+    second: Asset_VoidEventCollapse_276
+  - first:
+      213: 4563303108804132874
+    second: Asset_VoidEventCollapse_277
+  - first:
+      213: -8111290071062276868
+    second: Asset_VoidEventCollapse_278
+  - first:
+      213: -4072562002554106631
+    second: Asset_VoidEventCollapse_279
+  - first:
+      213: -425187923592139255
+    second: Asset_VoidEventCollapse_280
+  - first:
+      213: -902569829774214677
+    second: Asset_VoidEventCollapse_281
+  - first:
+      213: -4330042248115147981
+    second: Asset_VoidEventCollapse_282
+  - first:
+      213: -6727877843551161436
+    second: Asset_VoidEventCollapse_283
+  - first:
+      213: 8831042346518108926
+    second: Asset_VoidEventCollapse_284
+  - first:
+      213: 7241117475229777594
+    second: Asset_VoidEventCollapse_285
+  - first:
+      213: -8589878968720688070
+    second: Asset_VoidEventCollapse_286
+  - first:
+      213: 8473433403418655270
+    second: Asset_VoidEventCollapse_287
+  - first:
+      213: -1986682657695722275
+    second: Asset_VoidEventCollapse_288
+  - first:
+      213: -6947904870045964990
+    second: Asset_VoidEventCollapse_289
+  - first:
+      213: -4650708701015209432
+    second: Asset_VoidEventCollapse_290
+  - first:
+      213: 6164786340935074395
+    second: Asset_VoidEventCollapse_291
+  - first:
+      213: 7444539680873623205
+    second: Asset_VoidEventCollapse_292
+  - first:
+      213: 5155958309128835327
+    second: Asset_VoidEventCollapse_293
+  - first:
+      213: 2385235196704614765
+    second: Asset_VoidEventCollapse_294
+  - first:
+      213: 4873651757128503436
+    second: Asset_VoidEventCollapse_295
+  - first:
+      213: -7015818050565260841
+    second: Asset_VoidEventCollapse_296
+  - first:
+      213: 276282968565413630
+    second: Asset_VoidEventCollapse_297
+  - first:
+      213: 2006917994243742379
+    second: Asset_VoidEventCollapse_298
+  - first:
+      213: 6286880600911851885
+    second: Asset_VoidEventCollapse_299
+  - first:
+      213: -2970586758227065994
+    second: Asset_VoidEventCollapse_300
+  - first:
+      213: 7208719683649227398
+    second: Asset_VoidEventCollapse_301
+  - first:
+      213: -1949627129470595716
+    second: Asset_VoidEventCollapse_302
+  - first:
+      213: -6801545508878832546
+    second: Asset_VoidEventCollapse_303
+  - first:
+      213: 1663666493108696514
+    second: Asset_VoidEventCollapse_304
+  - first:
+      213: 8890372916959509351
+    second: Asset_VoidEventCollapse_305
+  - first:
+      213: -1587355452170823209
+    second: Asset_VoidEventCollapse_306
+  - first:
+      213: 6890761936107036022
+    second: Asset_VoidEventCollapse_307
+  - first:
+      213: 5106190430389856596
+    second: Asset_VoidEventCollapse_308
+  - first:
+      213: -1078085229075441374
+    second: Asset_VoidEventCollapse_309
+  - first:
+      213: 590910907660616780
+    second: Asset_VoidEventCollapse_310
+  - first:
+      213: 3907888885515646713
+    second: Asset_VoidEventCollapse_311
+  - first:
+      213: -2917291650986934004
+    second: Asset_VoidEventCollapse_312
+  - first:
+      213: 8809312162740405610
+    second: Asset_VoidEventCollapse_313
+  - first:
+      213: -6858338518786556318
+    second: Asset_VoidEventCollapse_314
+  - first:
+      213: 464387130881281856
+    second: Asset_VoidEventCollapse_315
+  - first:
+      213: -1901832840018909589
+    second: Asset_VoidEventCollapse_316
+  - first:
+      213: -3553598316844511119
+    second: Asset_VoidEventCollapse_317
+  - first:
+      213: -6389788622125726941
+    second: Asset_VoidEventCollapse_318
+  - first:
+      213: 5719840872240944502
+    second: Asset_VoidEventCollapse_319
+  - first:
+      213: 8775178964665133908
+    second: Asset_VoidEventCollapse_320
+  - first:
+      213: 815789132838923017
+    second: Asset_VoidEventCollapse_321
+  - first:
+      213: 8953164856997351997
+    second: Asset_VoidEventCollapse_322
+  - first:
+      213: -7755715670414003464
+    second: Asset_VoidEventCollapse_323
+  - first:
+      213: 5166545061309455032
+    second: Asset_VoidEventCollapse_324
+  - first:
+      213: -2616765212035717262
+    second: Asset_VoidEventCollapse_325
+  - first:
+      213: 5869788364538471815
+    second: Asset_VoidEventCollapse_326
+  - first:
+      213: 8072745406256615356
+    second: Asset_VoidEventCollapse_327
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e386d316fa562f6b0800000000000000
+      internalID: -5264033210517592002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9612bb681d448d830800000000000000
+      internalID: 4096099527792730473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069e11405635cc830800000000000000
+      internalID: 4092737854698023264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a504fb44f52a060800000000000000
+      internalID: 6963232722739288605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76cda9d1e0d9228d0800000000000000
+      internalID: -2872560928357163929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed526e62c955bc600800000000000000
+      internalID: 489579113655707102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57663d11e4eedb4f0800000000000000
+      internalID: -811230338782894475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ac6fe7ed2858ba0800000000000000
+      internalID: -6087315429196903936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a2582a9adb50f10800000000000000
+      internalID: 2235401326333078073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e53627fc18f9ba0800000000000000
+      internalID: -6079998243949552098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc62ca334898f8a0800000000000000
+      internalID: -6271095066597364491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c944d8dc8d5d1950800000000000000
+      internalID: 6421391503214791111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d1c4c5781703ad0800000000000000
+      internalID: -2724552948376134320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbf5729422c8b3b0800000000000000
+      internalID: -5496429882873873478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12eba8cffd606d0a0800000000000000
+      internalID: -6857285823540576735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c43e468ba7100d0800000000000000
+      internalID: -3458348106458641271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d569afd8dfb225d60800000000000000
+      internalID: 7877407066233149021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3edc864b321a2dbd0800000000000000
+      internalID: -2606844059571401245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b2afb80e8417dd0800000000000000
+      internalID: -2490128989700871396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe60cdc32b4bf070800000000000000
+      internalID: 8141183368550182652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba50b8dcdad06d90800000000000000
+      internalID: -7106439569927546177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f906dc90732d6fb0800000000000000
+      internalID: -4653023873429272077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580f6476d0ad6c5e0800000000000000
+      internalID: -1889583242533212027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset_VoidEventCollapse_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fb016a47583efc0800000000000000
+      internalID: -3466780552096333974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 362d4e83487d8114e875e631fae9a6ff
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Asset_VoidEventCollapse_0: -5264033210517592002
+      Asset_VoidEventCollapse_1: 4096099527792730473
+      Asset_VoidEventCollapse_10: -6271095066597364491
+      Asset_VoidEventCollapse_11: 6421391503214791111
+      Asset_VoidEventCollapse_12: -2724552948376134320
+      Asset_VoidEventCollapse_13: -5496429882873873478
+      Asset_VoidEventCollapse_14: -6857285823540576735
+      Asset_VoidEventCollapse_15: -3458348106458641271
+      Asset_VoidEventCollapse_16: 7877407066233149021
+      Asset_VoidEventCollapse_17: -2606844059571401245
+      Asset_VoidEventCollapse_18: -2490128989700871396
+      Asset_VoidEventCollapse_19: 8141183368550182652
+      Asset_VoidEventCollapse_2: 4092737854698023264
+      Asset_VoidEventCollapse_20: -7106439569927546177
+      Asset_VoidEventCollapse_21: -4653023873429272077
+      Asset_VoidEventCollapse_22: -1889583242533212027
+      Asset_VoidEventCollapse_23: -3466780552096333974
+      Asset_VoidEventCollapse_3: 6963232722739288605
+      Asset_VoidEventCollapse_4: -2872560928357163929
+      Asset_VoidEventCollapse_5: 489579113655707102
+      Asset_VoidEventCollapse_6: -811230338782894475
+      Asset_VoidEventCollapse_7: -6087315429196903936
+      Asset_VoidEventCollapse_8: 2235401326333078073
+      Asset_VoidEventCollapse_9: -6079998243949552098
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

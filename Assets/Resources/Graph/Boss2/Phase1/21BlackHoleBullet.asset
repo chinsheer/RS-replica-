@@ -10,11 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1431a27b152377640a6a65557f337965, type: 3}
-  m_Name: 21ActiveWall
+  m_Name: 21BlackHoleBullet
   m_EditorClassIdentifier: Assembly-CSharp::PatternData
   Attacks:
-  - {fileID: 11400000, guid: ae955fde7761ac949a7641cda83a47c8, type: 2}
-  - {fileID: 11400000, guid: cabe6894417801643a9ba05db36bb7b8, type: 2}
-  Edges:
-  - {fileID: 11400000, guid: 9a918bcced195d447b0e209aabe76d73, type: 2}
-  - {fileID: 11400000, guid: b08b6be83c302f540a7f0f8974212a2e, type: 2}
+  - {fileID: 11400000, guid: c9683c30a0c80d94ab0fe72c246a3064, type: 2}
+  Edges: []

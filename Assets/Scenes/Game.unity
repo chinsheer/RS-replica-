@@ -891,6 +891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 204f9d8de7742b9489eefcaf493f0725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStatusEffect
+  _body: {fileID: 1663558921}
+  _hurtbox: {fileID: 993893131}
 --- !u!114 &542255672
 MonoBehaviour:
   m_ObjectHideFlags: 0
