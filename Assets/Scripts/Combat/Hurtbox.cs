@@ -2,10 +2,17 @@ using UnityEngine;
 
 public class Hurtbox : MonoBehaviour
 {
-    public IDamageable Owner { get; private set; }
+    public IDamageable DamageOwner { get; private set; }
+    public IStatusReceiver StatusOwner { get; private set; }
 
     void Awake()
     {
-        Owner = GetComponentInParent<IDamageable>();
+        DamageOwner = GetComponentInParent<IDamageable>();
+        StatusOwner = GetComponentInParent<IStatusReceiver>();
+    }
+
+    public void ChangeLayer(string layerName)
+    {
+        gameObject.layer = LayerMask.NameToLayer(layerName);
     }
 }

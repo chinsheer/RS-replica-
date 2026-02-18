@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Enemy
   - EnemyBullet
+  - Wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Wall
   - Water
   - UI
   - EnemyAttack
@@ -19,9 +20,9 @@ TagManager:
   - PlayerAttack
   - Enemy
   - EnemyAttackIndicator
-  - 
-  - 
-  - 
+  - PlayerBody
+  - PlayerBorder
+  - Invincible
   - 
   - 
   - 

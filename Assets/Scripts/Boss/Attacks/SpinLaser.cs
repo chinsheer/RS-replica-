@@ -66,6 +66,11 @@ public class SpinLaser : AttackData
         }
     }
 
+    public override IEnumerator Recover(IBossContext ctx)
+    {
+        yield return new WaitForSeconds(RecoverTime);
+    }
+
     float RotateAngle(float time)
     {
         return _speed * time;

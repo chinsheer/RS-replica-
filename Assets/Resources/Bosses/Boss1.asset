@@ -29,4 +29,5 @@ MonoBehaviour:
     AllPatterns:
     - {fileID: 11400000, guid: a01fbaf69ed641543873f99bdbea2f65, type: 2}
     - {fileID: 11400000, guid: 9c9ac91f8670615458cc55f3cd4943f0, type: 2}
+    - {fileID: 11400000, guid: 8578dca5b479b2741a66f340183b1e79, type: 2}
   SelfLoopPenalty: 0

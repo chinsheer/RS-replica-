@@ -6,7 +6,7 @@ public class Projectile : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        other.GetComponent<Hurtbox>().Owner.TakeDamage(Damage);
+        other.GetComponent<Hurtbox>().DamageOwner.TakeDamage(Damage);
         Destroy(gameObject);
     }
 

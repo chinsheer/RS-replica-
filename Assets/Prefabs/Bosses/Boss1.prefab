@@ -161,7 +161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8312127970847013665}
   - component: {fileID: 1993650268569448665}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 5051248792618231058}
   - component: {fileID: 7335690552626084189}
   - component: {fileID: 2553485403551217451}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Boss1
   m_TagString: Enemy
   m_Icon: {fileID: 0}

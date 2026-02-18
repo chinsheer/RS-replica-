@@ -78,7 +78,7 @@ public sealed class PatternInstance
     {
         yield return attack.Indicator(ctx);
         yield return attack.Execute(ctx);
-        yield return new WaitForSeconds(attack.RecoverTime);
+        yield return attack.Recover(ctx);
         onComplete?.Invoke();
     }
     

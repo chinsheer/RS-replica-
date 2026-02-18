@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StageController : MonoBehaviour
 {
@@ -7,15 +8,22 @@ public class StageController : MonoBehaviour
     [SerializeField] private GameObject _player;
 
     [SerializeField] private BossHealthUI _bossHealthUI;
+    [SerializeField] private int _startIndex = 0;
 
     private void Start()
     {
         StartCoroutine(RunStage());
+        _player.GetComponent<PlayerHealth>().OnDeath += RestartStage;
+    }
+
+    private void RestartStage()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private IEnumerator RunStage()
     {
-        for (int i = 0; i < _bossDatas.Length; i++)
+        for (int i = _startIndex; i < _bossDatas.Length; i++)
         {
             BossData bossData = _bossDatas[i];
             GameObject bossGO = Instantiate(bossData.BossPrefab, bossData.SpawnPosition, Quaternion.identity);
